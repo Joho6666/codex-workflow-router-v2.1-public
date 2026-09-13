@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "snapshot_id": "a7400e01-9a95-4547-89f8-8f549615152f",
+  "observed_at": "2026-09-13T10:32:37.7747928Z",
+  "stale_after_seconds": 21600,
+  "stale": false,
+  "source": [
+    "config.toml",
+    "RUNTIME_TOOLS.json"
+  ],
+  "servers": [
+    {
+      "server": "node_repl",
+      "configured": true,
+      "runtime_visible": true,
+      "tools_discovered": true,
+      "runtime_available": null,
+      "healthy": null,
+      "startable": null,
+      "reachable": null,
+      "connected": null,
+      "observed_at": "2026-09-13T10:32:37.7747928Z",
+      "snapshot_id": "a7400e01-9a95-4547-89f8-8f549615152f",
+      "stale": false,
+      "evidence": [
+        "configured from config.toml",
+        "runtime tool inventory matched 3 tool(s)"
+      ]
+    },
+    {
+      "server": "chatcut_desktop",
+      "configured": true,
+      "runtime_visible": true,
+      "tools_discovered": true,
+      "runtime_available": null,
+      "healthy": null,
+      "startable": null,
+      "reachable": null,
+      "connected": null,
+      "observed_at": "2026-09-13T10:32:37.7747928Z",
+      "snapshot_id": "a7400e01-9a95-4547-89f8-8f549615152f",
+      "stale": false,
+      "evidence": [
+        "configured from config.toml",
+        "runtime tool inventory matched 61 tool(s)"
+      ]
+    }
+  ]
+}

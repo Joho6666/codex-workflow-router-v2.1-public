@@ -1,0 +1,6912 @@
+{
+  "schema_version": "2.1",
+  "generated_at": "2026-09-13T09:51:44.861Z",
+  "observed_at": "2026-09-13T09:51:44.861Z",
+  "source": "current Codex session ALL_TOOLS",
+  "tool_count": 1150,
+  "stale_after_seconds": 21600,
+  "stale": false,
+  "snapshot_id": "runtime-1b5559dfeda5df0e",
+  "tools": [
+    {
+      "name": "apply_patch",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "create_goal",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "exec_command",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "get_goal",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "image_gen__imagegen",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "list_mcp_resource_templates",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "list_mcp_resources",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__apply_script",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__browse_assets",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__browse_library",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__clean_script",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__convert_motion_graphic_to_video",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__create_motion_graphic_from_code",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__create_project",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__delete_project",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__detach_audio",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__duplicate_project",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__edit_asset",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__edit_captions",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__edit_item",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__edit_project",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__edit_track",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__enhance_speech",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__export_motion_graphic_prores",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__find_transcript",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__get_active_project",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__get_editor_url",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__inspect_asset",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__inspect_item",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__isolate_voice",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__list_projects",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__local_export",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__manage_avatar",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__manage_custom_voice",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__manage_design_style",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__manage_markers",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__manage_media_pool",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__manage_skill",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__manage_template",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__manage_timelines",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__manage_transcript",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__manage_voice",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__preview_timeline",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__pull_asset",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__push_asset",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__read_captions",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__read_project",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__read_script",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__register_converted_video",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__report_user_friction",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__request_asset_download",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__restore_project",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__search_fonts",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__search_stock_media",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__smooth_audio",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__split_item",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__submit_avatar_video",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__submit_image",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__submit_music",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__submit_shader",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__submit_sound",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__submit_video",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__submit_video_translation",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__submit_voice",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__target_project",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__track_progress",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__trigger_transcript",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__chatcut_desktop__web_browser",
+      "namespace": "chatcut",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__automation_update",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__capture_screen_context",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__consume_usage_reset",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__create_sidebar_section",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__create_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__delete_sidebar_section",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__end_realtime_voice_call",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__fork_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__get_handoff_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__get_usage_limits",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__handoff_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__list_archived_threads",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__list_projects",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__list_threads",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__load_workspace_dependencies",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__move_project_to_sidebar_section",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__move_thread_to_sidebar_section",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__navigate_to_codex_page",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__open_in_codex",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__read_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__read_thread_terminal",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__rename_sidebar_section",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__reorder_section",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__reorder_sidebar_projects",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__reorder_sidebar_sections",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__send_message_to_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__set_thread_archived",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__set_thread_title",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__share_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__uninstall_plugin",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_app__wait_threads",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_document_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_markdown_to_pdf",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_combine",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_compress",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_create",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_delete_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_edit_ui",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_export",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_ocr",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_operation_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_page_organize",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_properties",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_redact",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_reorder_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_rotate_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_split",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_to_image",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_to_markdown",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_acrobat_pdf_viewer",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_adobe_mandatory_init",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_animate_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_add_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_add_file_check_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_copy_assets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_create_folders",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_finalize_file_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_get_presigned_urls",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_initialize_file_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_inline_preview",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_license_and_download_stock",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_migrate_guest_storage",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_openai_file_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_preview_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_asset_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_boards_add_items_to_board",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_boards_create_new_board",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_change_background_color",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_convert_pdf_to_indd",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_document_convert_pdf",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_document_merge_data_layout",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_document_merge_data_vector",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_document_render_layout",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_document_render_vector",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_download_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_export_idml",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_fill_text",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_font_recommend",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_generate_indd_mapping_prompt",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_add_grain",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_add_noise",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_apply_adjustments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_apply_auto_tone",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_apply_color_overlay",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_apply_gaussian_blur",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_apply_glitch_effect",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_apply_halftone",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_apply_lens_blur",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_apply_monochromatic_tint",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_apply_preset",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_auto_straighten",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_crop_and_resize",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_crop_to_bounds",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_fill_area",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_generate",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_generative_expand",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_instruct_edit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_invert_selection",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_list_presets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_remove_background",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_remove_blemishes",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_select_by_prompt",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_select_subject",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_image_vectorize",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_markdown_to_pdf",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_media_enhance_speech",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_media_summarize",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_pdf_compress",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_pdf_create",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_pdf_export",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_pdf_ocr",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_pdf_operation_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_pdf_properties",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_pdf_to_image",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_pdf_to_markdown",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_prepare_indd_merge_template",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_replace_image",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_search_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_video_create_quick_cut",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_video_metadata",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_video_render",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_video_render_frame",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__adobe_video_resize",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ai_voice_generator_create_audio",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__almosafer_com_search_flights",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__almosafer_com_search_hotels",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__apixel_generate_image",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__apixel_personal_center",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_create_base44_app",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_create_checkpoint",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_create_entities",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_create_entity_schema",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_edit_base44_app",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_edit_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_grep",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_import_claude_design_from_url",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_initiate_connector_connection",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_list_connectors",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_list_directory",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_list_entity_schemas",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_list_user_apps",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_query_entities",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_read_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_run_command",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_update_entities",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_update_entity_schema",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__base44_write_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__caloriecam_nutrition_create_plans",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__caloriecam_nutrition_export_plan",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_autofill_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_cancel_editing_transaction",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_commit_editing_transaction",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_copy_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_create_design_from_brand_template",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_create_design_from_candidate",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_create_folder",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_fetch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_generate_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_get_assets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_get_brand_template_dataset",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_get_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_get_design_content",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_get_design_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_get_design_thumbnail",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_get_presenter_notes",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_image_to_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_import_design_from_url",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_list_brand_kits",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_list_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_list_folder_items",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_merge_designs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_move_item_to_folder",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_perform_editing_operations",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_prepare_design_generation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_resize_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_resolve_shortlink",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_search_brand_templates",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_search_designs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_search_folders",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_start_editing_transaction",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__canva_upload_asset_from_url",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__codex_document_control_execute_document_command",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__codex_document_control_get_document_tool_schemas",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__codex_document_control_list_document_sessions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__composio_mcp_composio_get_tool_schemas",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__composio_mcp_composio_manage_connections",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__composio_mcp_composio_multi_execute_tool",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__composio_mcp_composio_remote_bash_tool",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__composio_mcp_composio_remote_workbench",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__composio_mcp_composio_search_tools",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__composio_mcp_composio_wait_for_connections",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__datacamp_code_along_get_by_id",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__datacamp_content_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__datacamp_course_get_by_id",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__datacamp_exercise_get_by_id",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__datacamp_tutorial_get_by_id",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__datacamp_webinar_get_by_id",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_cancel_job",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_check_job",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_get_job_result",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_get_model_schema",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_get_pricing",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_recommend_model",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_run_model",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_search_docs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_search_models",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_submit_job",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__fal_upload_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_add_code_connect_map",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_create_generative_plugin",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_create_new_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_create_shader",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_download_assets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_export_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_generate_deck",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_generate_diagram",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_generate_figma_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_code_connect_map",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_code_connect_suggestions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_context_for_code_connect",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_design_context",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_figjam",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_generative_plugin",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_libraries",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_metadata",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_motion_context",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_screenshot",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_shader",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_variable_defs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_list_file_components_for_code_connect",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_list_file_shaders",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_list_generative_plugins",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_list_shaders",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_search_design_system",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_send_code_connect_mappings",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_update_generative_plugin",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_update_shader",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_upload_assets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_use_figma",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_cancel_tool_run",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_get_tool_inputs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_get_tool_run_output",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_list_tools",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_run_tool",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_upload_asset",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__figma_whoami",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_export_gamma",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_generate",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_generate_from_template",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_generate_image",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_generate_multi_page_gamma",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_export_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_folders",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_gamma_analytics",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_gamma_card_analytics",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_gamma_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_gamma_viewer_analytics",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_gamma_viewer_detail_analytics",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_gammas",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_generation_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_image_generation_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_get_themes",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gamma_read_gamma",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__getmindmap_connect_account",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__getmindmap_create_mindmap",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_add_comment_to_issue",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_add_issue_assignees",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_add_issue_labels",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_add_reaction_to_issue_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_add_reaction_to_pr",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_add_reaction_to_pr_review_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_add_review_to_pr",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_compare_commits",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_convert_pull_request_to_draft",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_create_blob",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_create_branch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_create_commit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_create_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_create_issue",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_create_pull_request",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_create_tree",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_delete_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_dismiss_pull_request_review",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_download_user_content",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_download_workflow_artifact",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_enable_auto_merge",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_blob",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_commit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_commit_workflow_runs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_issue",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_issue_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_pr",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_pr_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_pr_file_patch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_pr_patch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_workflow_job_logs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_workflow_job_steps",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_workflow_run_artifacts",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_workflow_run_jobs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_commit_combined_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_issue_comment_reactions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_pr_diff",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_pr_info",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_pr_reactions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_pr_review_comment_reactions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_profile",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_repo",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_repo_collaborator_permission",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_user_login",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_get_users_recent_prs_in_repo",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_label_pr",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_installations",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_installed_accounts",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_pr_changed_filenames",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_pull_request_review_threads",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_pull_request_reviews",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_recent_issues",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_repositories",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_repositories_by_affiliation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_repositories_by_installation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_user_org_memberships",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_list_user_orgs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_lock_issue_conversation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_mark_pull_request_ready_for_review",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_merge_pull_request",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_issue_assignees",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_issue_label",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_pull_request_reviewers",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_reaction_from_issue_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_reaction_from_pr",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_reaction_from_pr_review_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_reply_to_review_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_request_pull_request_reviewers",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_rerun_failed_workflow_run_jobs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_rerun_workflow_job",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_resolve_review_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_search_branches",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_search_commits",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_search_installed_repositories_streaming",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_search_installed_repositories_v2",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_search_issues",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_search_prs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_search_repositories",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_unlock_issue_conversation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_unresolve_review_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_update_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_update_issue",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_update_issue_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_update_pull_request",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_update_ref",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__github_update_review_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_apply_labels_to_emails",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_archive_emails",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_batch_modify_email",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_batch_read_email",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_batch_read_email_threads",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_bulk_label_matching_emails",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_create_draft",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_create_label",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_delete_emails",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_forward_emails",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_get_profile",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_list_drafts",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_list_labels",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_read_attachment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_read_email",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_read_email_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_search_email_ids",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_search_emails",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_send_draft",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_send_email",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__gmail_update_draft",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__goodnotes_create_markdown_text_document",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__goodnotes_draw_svg_image",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__goodnotes_generate_mermaid_diagram",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_batch_read_event",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_create_event",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_delete_event",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_fetch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_get_availability",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_get_colors",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_get_profile",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_list_calendars",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_list_event_labels",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_read_event",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_respond_event",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_search_events",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_set_event_label_silently",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_update_event",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_batch_update_document",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_batch_update_presentation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_batch_update_spreadsheet",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_bulk_update_file_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_copy_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_create_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_create_folder",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_create_presentation_from_template",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_delete_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_duplicate_sheet_in_new_spreadsheet",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_export_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_fetch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_fetch_file_revision",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_find_document_text_range",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_document",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_document_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_document_paragraph_range",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_document_tables",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_document_text",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_file_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_file_metadata",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_presentation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_presentation_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_presentation_outline",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_presentation_tables",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_presentation_text",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_profile",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_slide",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_slide_thumbnail",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_spreadsheet_cells",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_spreadsheet_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_spreadsheet_metadata",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_spreadsheet_range",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_import_document",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_import_presentation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_import_spreadsheet",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_list_drives",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_list_file_revisions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_list_folder",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_recent_documents",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_search_spreadsheet_rows",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_share_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_update_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_upload_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_bulk_asset_statuses",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_bulk_lipsync_statuses",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_bulk_video_statuses",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_bulk_video_translation_statuses",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_clone_voice",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_complete_asset_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_complete_asset_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_ai_clipping",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_asset_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_asset_upload_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_avatar_consent",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_brand_glossary",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_brand_kit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_digital_twin",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_filler_word_removal",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_lipsync",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_lipsync_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_photo_avatar",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_prompt_avatar",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_speech",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_video_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_video_from_avatar",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_video_from_cinematic_avatar",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_video_from_image",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_video_from_studio",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_video_translation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_create_video_translation_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_delete_ai_clipping",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_delete_asset",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_delete_avatar_group",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_delete_avatar_look",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_delete_brand_glossary",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_delete_brand_kit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_delete_lipsync",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_delete_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_delete_video_translation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_delete_voice",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_design_voice",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_generate_from_template",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_ai_clipping",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_asset",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_asset_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_avatar_creation_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_avatar_group",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_avatar_look",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_brand_glossary",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_brand_kit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_current_user",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_filler_word_removal",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_lipsync",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_lipsync_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_template",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_video_agent_resource",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_video_agent_session",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_video_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_video_scenes",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_video_translation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_video_translation_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_get_voice",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_ai_clipping",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_assets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_avatar_groups",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_avatar_looks",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_brand_glossaries",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_brand_kits",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_lipsyncs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_templates",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_video_agent_session_videos",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_video_agent_sessions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_video_agent_styles",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_video_translation_languages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_video_translations",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_videos",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_list_voices",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_open_avatar_creator",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_prepare_avatar_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_search_audio_sounds",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_show_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_stop_video_agent_session",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_update_avatar_group",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_update_avatar_look",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_update_brand_glossary",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_update_brand_kit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_update_lipsync",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_update_video_translation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__heygen_video_agent_generate",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_balance",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_create_website",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_deploy_website",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_estimate_image_cost",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_estimate_video_cost",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_execute_preset",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_generate_audio",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_generate_audio_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_generate_image",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_generate_image_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_generate_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_generate_video_batch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_get_faceless_channel_presets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_get_preset_instructions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_get_presets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_get_workflow_bundle_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_get_workflow_instructions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_job_display",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_jobs_wait",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_list_voices",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_list_website_categories",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_list_websites",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_list_workspaces",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_create_brand_kit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_create_product_from_media",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_delete_brand_kit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_get_brand_kit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_list_ad_formats",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_list_avatars",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_list_brand_kits",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_list_hooks",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_list_products",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_list_settings",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_list_video_presets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_list_webproducts",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_marketing_update_brand_kit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_media_confirm",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_media_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_media_upload_and_confirm",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_models_get",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_models_list",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_models_recommend",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_models_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_participate_in_contest",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_publish_website",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_rename_website",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_resolve_faceless_channel_preset",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_sandbox_exec",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_create_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_get_artifact",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_get_blend",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_get_glb",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_get_operation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_get_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_import_asset",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_list_projects",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_query_python",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_run_python",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_search_assets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_scene_builder_3d_show_scene",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_show_generation_by_ids",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_show_generations",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_show_marketing_studio_generations",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_show_medias",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_show_reference_elements",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_video_analysis_create",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_video_analysis_jobs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_video_analysis_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_voice_change",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_website_db",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_website_repo_access",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_website_secrets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_website_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_workspace_clear_selection",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__higgsfield_workspace_select",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__hotline_get_local_hotline",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__hugging_face_dataset_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__hugging_face_hf_doc_fetch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__hugging_face_hf_doc_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__hugging_face_hf_jobs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__hugging_face_hf_whoami",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__hugging_face_hub_repo_details",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__hugging_face_model_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__hugging_face_paper_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__hugging_face_space_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__instant_website_generate_and_deploy_website",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_create_attachment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_create_attachment_from_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_create_initiative_label",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_create_issue_label",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_attachment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_customer",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_customer_need",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_diff_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_status_update",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_extract_images",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_fetch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_agent_skill",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_attachment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_diff",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_diff_threads",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_document",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_initiative",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_issue",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_issue_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_milestone",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_notifications",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_release",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_release_note",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_status_updates",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_team",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_template",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_user",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_workspace",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_agent_skills",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_customers",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_cycles",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_diffs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_documents",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_initiative_labels",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_initiatives",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_issue_labels",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_issue_statuses",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_issues",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_milestones",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_project_labels",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_projects",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_release_notes",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_release_pipelines",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_releases",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_teams",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_templates",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_users",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_mark_notification",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_merge_diff",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_prepare_attachment_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_resolve_diff_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_customer",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_customer_need",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_diff_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_document",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_initiative",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_initiative_label",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_issue",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_issue_label",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_milestone",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_project_label",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_release",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_release_note",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_status_update",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_search_documentation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_share_issue",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_submit_diff_review",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__linear_unshare_issue",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_add_connector",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_create_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_create_workspace_skill",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_delete_workspace_skill",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_deploy_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_enable_database",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_database_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_diff",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_file_upload_url",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_me",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_message",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_project_analytics",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_project_analytics_trend",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_project_knowledge",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_workspace",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_workspace_knowledge",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_get_workspace_skill",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_initiate_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_list_connectors",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_list_custom_connectors",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_list_design_systems",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_list_edits",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_list_files",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_list_messages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_list_projects",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_list_template_projects",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_list_workspace_skills",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_list_workspaces",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_move_projects_to_folder",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_query_database",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_read_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_remix_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_render_project_widget",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_send_message",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_set_folder_visibility",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_set_project_knowledge",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_set_project_visibility",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_set_workspace_knowledge",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__lovable_update_workspace_skill",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__netlify_get_netlify_coding_context",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__netlify_netlify_deploy_services_reader",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__netlify_netlify_deploy_services_updater",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__netlify_netlify_extension_services_reader",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__netlify_netlify_extension_services_updater",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__netlify_netlify_project_services_reader",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__netlify_netlify_project_services_updater",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__netlify_netlify_team_services_reader",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__netlify_netlify_user_services_reader",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_ai_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_fetch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_check_mcp_next_steps",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_convert_page_to_skill",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_create_attachment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_create_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_create_database",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_create_file_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_create_folder",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_create_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_create_view",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_download_attachment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_duplicate_page",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_get_async_task",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_get_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_get_session_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_get_teams",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_get_users",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_list_favorite_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_list_private_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_list_recent_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_list_session_events",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_list_shared_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_move_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_query_meeting_notes",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_query_sessions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_read_session_event",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_search_agents",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_search_sessions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_search_skills",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_send_message_to_session",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_show_advanced_analysis_next_steps",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_spawn_session",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_stop_session",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_update_data_source",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_update_folder",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_update_page",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_update_view",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_notion_wait_session",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_query_data_sources",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_query_multiple_data_sources",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__notion_search",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__openai_platform_create_encrypted_openai_api_key",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__openai_platform_list_openai_api_key_targets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__openai_platform_open_codex_api_key_setup",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_get_app_permissions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_get_plugin_dependencies",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_uninstall_app",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_update_app_permissions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__purevpn_privacy_assistant_vpn_connect_country",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__purevpn_privacy_assistant_vpn_get_info",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__purevpn_privacy_assistant_vpn_streaming_service",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__replit_ask_question",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__replit_create_app_from_prompt",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__replit_get_publish_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__replit_list_apps",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__replit_publish_app",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__replit_resolve_app_by_name",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__replit_search_apps",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__replit_update_app_using_prompt",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_complete_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_convert_video_to_hdr",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_create_workflow",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_edit_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_expand_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_feedback",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_generate_image",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_generate_multishot_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_generate_product_marketing_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_generate_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_get_task",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_get_workflow",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_init_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_list_recent",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_list_workflows",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_list_workspaces",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_localize_ad",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_remove_image_background",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_remove_video_background",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_run_workflow",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_save_workflow_version",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_show_plans_and_credits",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_upscale_image",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_upscale_video",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_validate_workflow_graph",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__runway_whoami",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_get_family_info",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_get_parental_controls",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_get_trusted_contact",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_prepare_parental_control_update",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_update_parental_control",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_add_custom_domain",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_change_site_slug",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_create_site",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_create_source_repository_write_credential",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_deploy_private_site_version",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_deploy_site_version",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_generate_siwc_bypass_token",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_deployment_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_environment_variables",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_site",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_site_version",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_site_worker_logs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_list_custom_domains",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_list_site_versions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_list_sites",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_read_database_overview",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_read_database_table_rows",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_refresh_custom_domain_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_remove_custom_domain",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_save_site_version",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_search_sites",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_update_environment_variables",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_update_site_access",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__sites_update_site_metadata",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_add_reaction",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_complete_file_upload",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_create_canvas",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_create_conversation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_create_list",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_create_reminder",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_delete_message",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_edit_message",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_get_file_upload_url",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_get_reactions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_invite_to_conversation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_join_conversation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_leave_conversation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_list_channel_members",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_list_starred_items",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_list_user_channels",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_list_user_conversations",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_list_user_groups",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_list_workspaces",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_read_canvas",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_read_channel",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_read_file",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_read_list",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_read_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_read_user_profile",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_schedule_message",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_search_channels",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_search_emojis",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_search_public",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_search_public_and_private",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_search_users",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_send_message",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_send_message_draft",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_update_canvas",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_update_list",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__slack_slack_update_user_profile",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_apply_migration",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_confirm_cost",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_create_branch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_create_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_delete_branch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_deploy_edge_function",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_execute_sql",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_generate_typescript_types",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_advisors",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_cost",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_edge_function",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_organization",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_project_url",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_publishable_keys",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_branches",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_edge_functions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_extensions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_migrations",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_organizations",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_projects",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_tables",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_merge_branch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_pause_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_rebase_branch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_reset_branch",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_restore_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__supabase_search_docs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__to3d_create_3d_job_from_url",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__to3d_get_3d_job_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__to3d_get_3d_result",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__to3d_get_3d_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__to3d_image_to_3d",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__to3d_process_image_url_to_3d",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_add_canvas_assets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_add_canvas_items",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_build_react_prototype",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_compare_design_versions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_compare_review_scores",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_create_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_create_design_version",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_create_diagram",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_create_group",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_create_page",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_create_page_from_template",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_create_version_from_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_create_workstream",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_duplicate_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_edit_react_prototype",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_get_agent_job",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_get_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_get_design_collection",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_get_design_preview",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_get_design_versions",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_get_generation_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_get_page_context",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_get_review_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_get_symbol",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_get_theme",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_list_community_templates",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_list_design_collections",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_list_diagrams",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_list_pages",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_list_symbols",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_list_themes",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_list_workstreams",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_move_design_to_page",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_move_group_to_page",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_move_page_to_workstream",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_archive_design",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_create_design_from_html",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_create_react_prototype",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_create_version_from_accessibility_fixes",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_create_version_from_persona_fixes",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_create_version_from_ux_fixes",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_delete_canvas_assets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_delete_canvas_items",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_delete_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_delete_comment_reply",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_delete_diagram",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_delete_group",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_delete_page",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_delete_workstream",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_edit_react_agent",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_prototype_publish",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_publish_design_preview",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_prepare_start_design_agent",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_preview_attention_heatmap",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_preview_flowchart",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_preview_flowchart_edits",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_preview_gaze_flow",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_preview_persona_audit",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_preview_ux_review",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_reply_to_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_resolve_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_resolve_comments_with_version_summary",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_save_accessibility_report",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_set_design_saved",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_set_group_saved",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_summarize_comments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_toggle_page_bookmark",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_update_canvas_assets",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_update_canvas_items",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_update_comment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_update_comment_reply",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_update_design_metadata",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_update_diagram",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_update_group",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_update_page",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__ux_pilot_update_workstream",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_add_toolbar_reaction",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_change_toolbar_thread_resolve_status",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_check_domain_availability_and_price",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_deploy_to_vercel",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_edit_toolbar_message",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_access_to_vercel_url",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_agent_run",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_agent_run_trace",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_deployment",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_deployment_build_logs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_project",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_runtime_errors",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_runtime_logs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_toolbar_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_import_claude_design_from_url",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_agent_run_projects",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_agent_runs",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_deployments",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_projects",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_teams",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_toolbar_threads",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_reply_to_toolbar_thread",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_search_vercel_documentation",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__codex_apps__vercel_web_fetch_vercel_url",
+      "namespace": "codex",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__creative_production_mcp__creative_production_board",
+      "namespace": "creative",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__node_repl__js",
+      "namespace": "node",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__node_repl__js_add_node_module_dir",
+      "namespace": "node",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__node_repl__js_reset",
+      "namespace": "node",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__openai_api_key_local_confirmation__confirm_openai_api_key_local_destination",
+      "namespace": "openai",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__openai_artifact_template_picker__choose_artifact_template",
+      "namespace": "openai",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__openai_artifact_template_picker__list_artifact_templates",
+      "namespace": "openai",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__batch",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__boot_sim",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__build_run_sim",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__build_sim",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__button",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__clean",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__debug_attach_sim",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__debug_breakpoint_add",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__debug_breakpoint_remove",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__debug_continue",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__debug_detach",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__debug_lldb_command",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__debug_stack",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__debug_variables",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__discover_projs",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__drag",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__gesture",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__get_app_bundle_id",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__get_coverage_report",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__get_file_coverage",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__get_sim_app_path",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__install_app_sim",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__key_press",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__key_sequence",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__launch_app_sim",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__list_schemes",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__list_sims",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__long_press",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__open_sim",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__record_sim_video",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__screenshot",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__session_clear_defaults",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__session_set_defaults",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__session_show_defaults",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__session_use_defaults_profile",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__show_build_settings",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__snapshot_ui",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__stop_app_sim",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__swipe",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__tap",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__test_sim",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__touch",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__type_text",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "mcp__xcodebuildmcp__wait_for_ui",
+      "namespace": "xcodebuildmcp",
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "multi_agent_v1__close_agent",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "multi_agent_v1__resume_agent",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "multi_agent_v1__send_input",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "multi_agent_v1__spawn_agent",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "multi_agent_v1__wait_agent",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "read_mcp_resource",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "request_plugin_install",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "update_goal",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "view_image",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "web__run",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    },
+    {
+      "name": "write_stdin",
+      "namespace": null,
+      "source_runtime": "codex",
+      "capabilities": []
+    }
+  ]
+}

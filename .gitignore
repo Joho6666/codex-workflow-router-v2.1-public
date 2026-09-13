@@ -1,0 +1,21 @@
+# Local Codex state and credentials
+config.toml
+auth.json
+auth.json.*
+.env
+.env.*
+secrets/
+sessions/
+logs/
+cache/
+plugins/
+*.sqlite
+*.sqlite-*
+*.db
+
+# Local/private generated state
+.codex/
+backups/
+attachments/
+tmp/
+

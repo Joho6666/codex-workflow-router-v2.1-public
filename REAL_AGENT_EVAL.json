@@ -1,0 +1,128 @@
+{
+  "schema_version": "2.1",
+  "status": "PASS",
+  "reason": "All 8 routes satisfy the catalog rules. Selected skills have eligible Codex-runtime records; Mirasim-only build-keil, flash-keil, and serial-monitor are excluded. Single-module cases use worktree=false and subagents=false, the three independent modules use both true, and Next.js/Vercel correctly has primary_skill=null with vercel/browser providers.",
+  "agent_id": "01a09a1d-c993-7cd1-a8d5-db1565cec060",
+  "evaluated_at": "2026-09-13T09:44:56.0000000Z",
+  "evidence": {
+    "thread_id": "01a09a1d-c993-7cd1-a8d5-db1565cec060",
+    "turn_id": "01a09a27-2c41-7233-b47e-9bf5a3b42973",
+    "host_id": "local",
+    "isolated_cwd": "<USER_HOME>\\Documents\\Codex\\2026-09-13\\router-real-agent-eval-20260913",
+    "allowed_files": [
+      "<USER_HOME>\\.codex\\AGENTS.md",
+      "<USER_HOME>\\.codex\\WORKFLOW_ROUTER.md",
+      "<USER_HOME>\\.codex\\ROUTING_CATALOG.json",
+      "<USER_HOME>\\.codex\\CAPABILITIES_SUMMARY.json"
+    ],
+    "runtime_filter": "strict Codex kind=skill, source_runtime=codex, discoverable_by_codex=true, stale!=true"
+  },
+  "cases": [
+    {
+      "id": "readme-typo",
+      "intent": "maintenance",
+      "domains": [],
+      "scale": "FAST",
+      "risk": "LOW",
+      "primary_skill": null,
+      "supporting_skills": [],
+      "providers": [],
+      "worktree": { "use": false, "reason": "FAST isolated edit" },
+      "subagents": { "use": false, "reason": "Single isolated objective" },
+      "verification": ["targeted-diff-check", "verification-before-completion"]
+    },
+    {
+      "id": "react-login-white-screen",
+      "intent": "bugfix",
+      "domains": ["frontend", "auth"],
+      "scale": "STANDARD",
+      "risk": "HIGH",
+      "primary_skill": "systematic-debugging",
+      "supporting_skills": [],
+      "providers": ["browser"],
+      "worktree": { "use": false, "reason": "Single-module bugfix" },
+      "subagents": { "use": false, "reason": "No independent objectives" },
+      "verification": ["build", "browser-flow", "browser-console", "verification-before-completion"]
+    },
+    {
+      "id": "frontend-design-system",
+      "intent": "refactor",
+      "domains": ["frontend", "design-system"],
+      "scale": "DEEP",
+      "risk": "LOW",
+      "primary_skill": "frontend-design",
+      "supporting_skills": [],
+      "providers": ["browser"],
+      "worktree": { "use": false, "reason": "Deep does not imply isolation" },
+      "subagents": { "use": false, "reason": "No independent modules" },
+      "verification": ["typecheck", "build", "responsive-check", "verification-before-completion"]
+    },
+    {
+      "id": "stm32-firmware",
+      "intent": "development",
+      "domains": ["embedded", "firmware"],
+      "scale": "DEEP",
+      "risk": "HIGH",
+      "primary_skill": "embedded-firmware-keil",
+      "supporting_skills": [],
+      "providers": [],
+      "worktree": { "use": false, "reason": "One firmware objective" },
+      "subagents": { "use": false, "reason": "No independent objectives" },
+      "verification": ["compile", "link", "flash-if-authorized", "serial-or-hardware-check", "verification-before-completion"]
+    },
+    {
+      "id": "stm32-schematic-pcb",
+      "intent": "development",
+      "domains": ["embedded", "eda"],
+      "scale": "DEEP",
+      "risk": "LOW",
+      "primary_skill": "kicad",
+      "supporting_skills": ["bom", "datasheets"],
+      "providers": ["kicad"],
+      "worktree": { "use": false, "reason": "Single EDA objective" },
+      "subagents": { "use": false, "reason": "No independent objectives" },
+      "verification": ["schematic-connectivity", "bom-check", "drc", "output-file-check", "verification-before-completion"]
+    },
+    {
+      "id": "academic-word",
+      "intent": "revision",
+      "domains": ["academic", "document"],
+      "scale": "STANDARD",
+      "risk": "LOW",
+      "primary_skill": "chinese-academic-writing-cn",
+      "supporting_skills": ["citation-verify"],
+      "providers": ["documents"],
+      "worktree": { "use": false, "reason": "Single document objective" },
+      "subagents": { "use": false, "reason": "No independent objectives" },
+      "verification": ["citation-check", "content-review", "render-check", "verification-before-completion"]
+    },
+    {
+      "id": "three-independent-map-login-database-modules",
+      "intent": "development",
+      "domains": ["frontend", "auth", "backend", "orchestration"],
+      "scale": "DEEP",
+      "risk": "HIGH",
+      "primary_skill": "orchestration",
+      "supporting_skills": ["planning-with-files", "dispatching-parallel-agents", "subagent-driven-development"],
+      "providers": ["browser"],
+      "worktree": { "use": true, "reason": "Three independent modules benefit from isolation" },
+      "subagents": { "use": true, "reason": "At least three independent objectives with parallel benefit" },
+      "verification": ["build", "integration-tests", "auth-data-boundary", "browser-flow", "verification-before-completion"]
+    },
+    {
+      "id": "nextjs-vercel-deployment",
+      "intent": "deployment",
+      "domains": ["deployment", "web"],
+      "scale": "STANDARD",
+      "risk": "HIGH",
+      "primary_skill": null,
+      "supporting_skills": [],
+      "providers": ["vercel", "browser"],
+      "worktree": { "use": false, "reason": "No isolation criterion is present" },
+      "subagents": { "use": false, "reason": "No independent objectives" },
+      "verification": ["build", "deployment-status", "health-check", "auth-read-write-boundary", "verification-before-completion"]
+    }
+  ]
+}
+
+

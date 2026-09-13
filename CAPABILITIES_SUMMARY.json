@@ -1,0 +1,2953 @@
+{
+  "schema_version": "2.1",
+  "index_type": "summary",
+  "generated_at": "2026-09-13T10:34:06.0991910Z",
+  "catalog_path": "<USER_HOME>\\.codex\\ROUTING_CATALOG.json",
+  "full_path": "<USER_HOME>\\.codex\\CAPABILITIES_FULL.json",
+  "statistics": {
+    "skill_count": 284,
+    "description_normal_count": 284,
+    "description_empty_count": 0,
+    "description_parser_failure_count": 0,
+    "trigger_extracted_count": 122,
+    "trigger_empty_count": 0,
+    "explicit_trigger_count": 0,
+    "derived_trigger_count": 122,
+    "fallback_description_count": 162,
+    "empty_trigger_count": 0,
+    "unclassified_count": 54,
+    "low_confidence_count": 54,
+    "entry_counts": {
+      "skill": 284,
+      "plugin": 105,
+      "mcp": 2,
+      "tool": 1150,
+      "hook": 8,
+      "automation": 3,
+      "total": 1552
+    }
+  },
+  "profiles": {
+    "development": {
+      "intent": "development",
+      "domains": [
+        "debugging",
+        "orchestration",
+        "web"
+      ],
+      "primary_skill_candidates": [
+        "orchestration",
+        "systematic-debugging"
+      ],
+      "supporting_skill_candidates": [
+        "dispatching-parallel-agents",
+        "embedded-debugger",
+        "executing-plans",
+        "playwright",
+        "planning-with-files",
+        "subagent-driven-development",
+        "embedded-firmware-keil"
+      ],
+      "verification_candidates": [
+        "embedded-debugger",
+        "verification-before-completion",
+        "playwright"
+      ],
+      "provider_candidates": [
+        "browser",
+        "vercel",
+        "netlify"
+      ]
+    },
+    "frontend": {
+      "intent": "development",
+      "domains": [
+        "frontend",
+        "web",
+        "design-system"
+      ],
+      "primary_skill_candidates": [
+        "frontend-design"
+      ],
+      "supporting_skill_candidates": [
+        "playwright",
+        "executing-plans",
+        "dispatching-parallel-agents",
+        "subagent-driven-development"
+      ],
+      "verification_candidates": [
+        "playwright",
+        "verification-before-completion"
+      ],
+      "provider_candidates": [
+        "browser",
+        "vercel",
+        "netlify",
+        "figma"
+      ]
+    },
+    "backend": {
+      "intent": "development",
+      "domains": [
+        "backend",
+        "auth"
+      ],
+      "primary_skill_candidates": [],
+      "supporting_skill_candidates": [
+        "executing-plans",
+        "dispatching-parallel-agents",
+        "subagent-driven-development"
+      ],
+      "verification_candidates": [
+        "verification-before-completion",
+        "playwright"
+      ],
+      "provider_candidates": [
+        "browser",
+        "cloudflare",
+        "supabase"
+      ]
+    },
+    "embedded": {
+      "intent": "development",
+      "domains": [
+        "embedded",
+        "firmware"
+      ],
+      "primary_skill_candidates": [
+        "embedded-firmware-keil"
+      ],
+      "supporting_skill_candidates": [
+        "embedded-debugger",
+        "executing-plans",
+        "dispatching-parallel-agents",
+        "embedded-firmware-keil",
+        "subagent-driven-development"
+      ],
+      "verification_candidates": [
+        "embedded-debugger",
+        "verification-before-completion"
+      ],
+      "provider_candidates": []
+    },
+    "eda": {
+      "intent": "development",
+      "domains": [
+        "eda",
+        "embedded"
+      ],
+      "primary_skill_candidates": [
+        "kicad",
+        "easyeda-agent"
+      ],
+      "supporting_skill_candidates": [
+        "datasheets",
+        "easyeda-agent",
+        "executing-plans",
+        "dispatching-parallel-agents",
+        "bom",
+        "kicad",
+        "embedded-debugger",
+        "subagent-driven-development"
+      ],
+      "verification_candidates": [
+        "verification-before-completion",
+        "embedded-debugger"
+      ],
+      "provider_candidates": []
+    },
+    "cad": {
+      "intent": "development",
+      "domains": [
+        "cad"
+      ],
+      "primary_skill_candidates": [
+        "solidworks-automation",
+        "autocad-automation"
+      ],
+      "supporting_skill_candidates": [
+        "autocad-automation",
+        "executing-plans",
+        "dispatching-parallel-agents",
+        "solidworks-api-skill",
+        "subagent-driven-development",
+        "embedded-firmware-keil"
+      ],
+      "verification_candidates": [
+        "verification-before-completion"
+      ],
+      "provider_candidates": []
+    },
+    "academic": {
+      "intent": "revision",
+      "domains": [
+        "academic",
+        "research"
+      ],
+      "primary_skill_candidates": [
+        "chinese-academic-writing-cn",
+        "scientific-writing"
+      ],
+      "supporting_skill_candidates": [
+        "citation-verify"
+      ],
+      "verification_candidates": [
+        "citation-verify"
+      ],
+      "provider_candidates": [
+        "documents",
+        "zotero"
+      ]
+    },
+    "document": {
+      "intent": "revision",
+      "domains": [
+        "document",
+        "academic"
+      ],
+      "primary_skill_candidates": [
+        "chinese-academic-writing-cn",
+        "scientific-writing"
+      ],
+      "supporting_skill_candidates": [
+        "citation-verify",
+        "chinese-academic-writing-cn"
+      ],
+      "verification_candidates": [
+        "citation-verify"
+      ],
+      "provider_candidates": [
+        "documents",
+        "zotero",
+        "canva"
+      ]
+    },
+    "research": {
+      "intent": "research",
+      "domains": [
+        "research",
+        "academic"
+      ],
+      "primary_skill_candidates": [
+        "chinese-academic-writing-cn",
+        "scientific-writing"
+      ],
+      "supporting_skill_candidates": [
+        "citation-verify",
+        "datasheets"
+      ],
+      "verification_candidates": [
+        "citation-verify"
+      ],
+      "provider_candidates": [
+        "documents",
+        "zotero"
+      ]
+    },
+    "creative": {
+      "intent": "creative",
+      "domains": [
+        "creative"
+      ],
+      "primary_skill_candidates": [
+        "video-spec-builder"
+      ],
+      "supporting_skill_candidates": [
+        "frontend-design",
+        "video-shotcraft",
+        "remotion-best-practices"
+      ],
+      "verification_candidates": [],
+      "provider_candidates": [
+        "canva",
+        "figma",
+        "remotion"
+      ]
+    },
+    "video": {
+      "intent": "video",
+      "domains": [
+        "video",
+        "creative"
+      ],
+      "primary_skill_candidates": [
+        "video-spec-builder",
+        "video-shotcraft"
+      ],
+      "supporting_skill_candidates": [
+        "frontend-design",
+        "video-shotcraft",
+        "remotion-best-practices"
+      ],
+      "verification_candidates": [],
+      "provider_candidates": [
+        "canva",
+        "figma",
+        "remotion"
+      ]
+    },
+    "deployment": {
+      "intent": "deployment",
+      "domains": [
+        "deployment",
+        "web",
+        "backend"
+      ],
+      "primary_skill_candidates": [],
+      "supporting_skill_candidates": [
+        "playwright"
+      ],
+      "verification_candidates": [
+        "playwright"
+      ],
+      "provider_candidates": [
+        "browser",
+        "vercel",
+        "netlify",
+        "cloudflare",
+        "supabase",
+        "github"
+      ]
+    },
+    "automation": {
+      "intent": "automation",
+      "domains": [
+        "automation",
+        "orchestration"
+      ],
+      "primary_skill_candidates": [
+        "orchestration"
+      ],
+      "supporting_skill_candidates": [
+        "orchestration",
+        "dispatching-parallel-agents",
+        "planning-with-files",
+        "subagent-driven-development"
+      ],
+      "verification_candidates": [],
+      "provider_candidates": []
+    }
+  },
+  "core_skills": [
+    "kicad",
+    "bom",
+    "datasheets",
+    "systematic-debugging",
+    "verification-before-completion",
+    "planning-with-files",
+    "executing-plans",
+    "dispatching-parallel-agents",
+    "subagent-driven-development",
+    "test-driven-development",
+    "requesting-code-review",
+    "receiving-code-review",
+    "frontend-design",
+    "video-shotcraft",
+    "embedded-firmware-keil",
+    "build-keil",
+    "flash-keil",
+    "serial-monitor",
+    "literature-review",
+    "citation-management",
+    "word-academic-docx-cn",
+    "autocad-automation",
+    "solidworks-automation"
+  ],
+  "core_mcp_servers": [
+    {
+      "name": "chatcut_desktop",
+      "configured": true,
+      "runtime_visible": true,
+      "tools_discovered": true,
+      "runtime_available": null,
+      "healthy": null,
+      "stale": false,
+      "observed_at": "2026-09-13T10:32:37.7747928Z"
+    },
+    {
+      "name": "node_repl",
+      "configured": true,
+      "runtime_visible": true,
+      "tools_discovered": true,
+      "runtime_available": null,
+      "healthy": null,
+      "stale": false,
+      "observed_at": "2026-09-13T10:32:37.7747928Z"
+    }
+  ],
+  "skill_runtime_filter": {
+    "rule": "Only entries with kind=skill, source_runtime=codex, discoverable_by_codex=true, and stale!=true may enter the strict Codex route; Mirasim-only entries remain external/unknown.",
+    "records": [
+      {
+        "name": "ai-experiment-report-zh",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "andrej-karpathy-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "artifact-template-academic-word",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "autocad-automation",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "bilingual-reporting",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "bom",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "brainstorming",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-app-promo-guide",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-create-motion-graphics",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-digital-human",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-image-gen-codex",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-multicam-sync",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-music",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-product-help",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-shader-gen",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-skill-creator",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-talking-head-guide",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-transcription",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-ugc-ad-guide",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-video-gen",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-visual-analysis",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-voice",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-voice-isolation",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-web-browser",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chatcut-widget-forms",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "chinese-academic-writing-cn",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "citation-management",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "citation-verify",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "cn-law-hub",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "codex-academic-humanizer",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "computer-use",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "darwin-skill",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "datasheets",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "defuddle",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "digikey",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "dispatching-parallel-agents",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "dogfood",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "easyeda-agent",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "easyeda-api",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "echarts",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "eda-pcb",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "element14",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "elon-musk-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "embedded-debugger",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "embedded-firmware-keil",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "emc",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "executing-plans",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "feynman-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "find-skills",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "finishing-a-development-branch",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "frontend-design",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "graphify",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "gsap-core",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "gsap-frameworks",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "gsap-performance",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "gsap-plugins",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "gsap-react",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "gsap-scrolltrigger",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "gsap-timeline",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "gsap-utils",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "hatch-pet",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "ian-xiaohei-illustrations",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "ilya-sutskever-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "imagegen",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "jlcpcb",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "json-canvas",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "kicad",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "lcsc",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "literature-review",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "markitdown",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "mouser",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "mrbeast-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "munger-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "naval-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "nuwa-skill",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "obsidian-bases",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "obsidian-cli",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "obsidian-markdown",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "openai-docs",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "orca-cli",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "orchestration",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "paper-figures",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "paul-graham-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "pcbway",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "pdf",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "planning-with-files",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "playwright",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "plotnine",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "plugin-creator",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "ppt-master",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "proteus-stm32-homework",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "proteus-stm32-homework-zh",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "receiving-code-review",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "remotion-best-practices",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "requesting-code-review",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "review-agent",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "scientific-schematics",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "scientific-writing",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "skill-creator",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "skill-installer",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "solidworks-api-skill",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "solidworks-automation",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "solidworks-fillet-chamfer-cnc",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "solidworks-threaded-holes",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "solidworks-vibecad",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "sora",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "spice",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "steve-jobs-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "subagent-driven-development",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "sun-yuchen-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "systematic-debugging",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "taleb-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "test-driven-development",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "trump-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "ui-ux-pro-max",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "using-git-worktrees",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "using-superpowers",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "verification-before-completion",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "video-shotcraft",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "video-spec-builder",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "wenshu-court-search",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "word-academic-docx-cn",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "writing-skills",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "x-mastery-mentor",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "yuanbao",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "zhang-yiming-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "zhangxuefeng-perspective",
+        "kind": "skill",
+        "source_runtime": "codex",
+        "discoverable_by_codex": true,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": true
+      },
+      {
+        "name": "ai-experiment-report-zh",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "andrej-karpathy-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-agent",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-api-explorer",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-auth",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-billing",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-chat",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-code-example",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-config",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-connect",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-custommodel",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-datasets",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-deploy",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-doctor",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-gen",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-helper",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-infer-endpoint",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-models",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-onboard",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-plans",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-pricing",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-profile",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-resources",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-shared",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-train-finetune",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-understand",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "arkcli-usage",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "automate",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "autopilot",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "bilingual-reporting",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "bom",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "brainstorming",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "build-keil",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "canvas",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "computer-use",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "context-compressor",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "create-hook",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "create-rule",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "create-skill",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "create-subagent",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "darwin-skill",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "datasheets",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "defuddle",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "deploy-with-vercel",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "digikey",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "dispatching-parallel-agents",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "doc",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "dogfood",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "easyeda-agent",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "easyeda-api",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "echarts",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "eda-pcb",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "element14",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "elon-musk-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "embedded-debugger",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "emc",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "eval",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "executing-plans",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "feynman-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "find-skills",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "finishing-a-development-branch",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "flash-keil",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "frontend-design",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "goal",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "graphify",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "gsap-core",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "gsap-frameworks",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "gsap-performance",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "gsap-plugins",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "gsap-react",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "gsap-scrolltrigger",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "gsap-timeline",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "gsap-utils",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "hatch-pet",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "ian-xiaohei-illustrations",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "ilya-sutskever-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "image-ecommerce",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "instagram",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "jianying-editor",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "jlcpcb",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "json-canvas",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "kicad",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "lcsc",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "loop",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "manim-video",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "markitdown",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "migrate-to-skills",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "mirasim-guide",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "mouser",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "mrbeast-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "munger-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "naval-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "new-repo",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "nuwa-skill",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "obsidian-bases",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "obsidian-cli",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "obsidian-markdown",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "onboard",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "openstoryline-install",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "openstoryline-use",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "orca-cli",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "orchestration",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "origin",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "paul-graham-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "pcbway",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "pdf",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "planning-with-files",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "playwright",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "portrait-enhancement",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "ppt-master",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "product-background-generation",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "proteus-stm32-homework",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "proteus-stm32-homework-zh",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "quality-posters",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "receiving-code-review",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "remotion-best-practices",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "rename-chat",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "requesting-code-review",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "review",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "review-bugbot",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "review-security",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "sdk",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "serial-monitor",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "share",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "shell",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "skill-creator-reference",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "spice",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "split-to-prs",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "static-analysis",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "statusline",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "steve-jobs-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "subagent-driven-development",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "sun-yuchen-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "systematic-debugging",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "taleb-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "test-driven-development",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "token-saver-adaptive-ratio",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "token-saver-memory-dedup",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "trump-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "ui-ux-pro-max",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "update-cli-config",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "update-cursor-settings",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "using-git-worktrees",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "using-superpowers",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "verification-before-completion",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "video-poster-design",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "video-shotcraft",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "video-spec-builder",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "video-use",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "workflow",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "wps-knowledgebase",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "writing-skills",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "x-mastery-mentor",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "xiaohongshu-cover-generator",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "yuanbao",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "zhang-yiming-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      },
+      {
+        "name": "zhangxuefeng-perspective",
+        "kind": "skill",
+        "source_runtime": "mirasim",
+        "discoverable_by_codex": null,
+        "stale": null,
+        "runtime_available": null,
+        "eligible_for_codex_route": false
+      }
+    ]
+  },
+  "duplicate_category_counts": {
+    "duplicate_skill_names": 0,
+    "cross_runtime_skill_mirrors": 82,
+    "provider_name_collisions": 2,
+    "plugin_version_duplicates": 22
+  },
+  "classification_audit_counts": {
+    "low_confidence": 54,
+    "single_weak_keyword": 213,
+    "name_description_conflicts": 0,
+    "parser_related": 0,
+    "suspected_misclassifications": 0,
+    "profile_contamination": 0
+  }
+}

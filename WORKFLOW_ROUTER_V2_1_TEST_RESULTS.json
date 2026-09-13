@@ -1,0 +1,2074 @@
+{
+  "schema_version": "2.1",
+  "generated_at": "2026-09-13T10:34:05.7282180Z",
+  "runtime": {
+    "powershell": "7.6.5",
+    "test_script": "<USER_HOME>\\.codex\\scripts\\test-workflow-router.ps1"
+  },
+  "totals": {
+    "passes": 183,
+    "failures": 0,
+    "skipped": 0
+  },
+  "real_agent_eval": {
+    "status": "PASS",
+    "reason": "All 8 routes satisfy the catalog rules. Selected skills have eligible Codex-runtime records; Mirasim-only build-keil, flash-keil, and serial-monitor are excluded. Single-module cases use worktree=false and subagents=false, the three independent modules use both true, and Next.js/Vercel correctly has primary_skill=null with vercel/browser providers.",
+    "path": "<USER_HOME>\\.codex\\REAL_AGENT_EVAL.json"
+  },
+  "cases": [
+    {
+      "router_version": "2.1.0",
+      "intent": "maintenance",
+      "domains": [
+        "unknown"
+      ],
+      "scale": "FAST",
+      "risk": "LOW",
+      "primary_skill": null,
+      "supporting_skills": [],
+      "providers": [],
+      "worktree": {
+        "use": false,
+        "reason": "Worktree gate not met; DEEP alone is insufficient and objective/isolation evidence is incomplete."
+      },
+      "subagents": {
+        "use": false,
+        "reason": "Subagent gate not met; requires DEEP, parallel benefit, at least 2 objectives, and low-conflict evidence."
+      },
+      "verification": [
+        "targeted-diff-check",
+        "verification-before-completion"
+      ],
+      "planning": "none",
+      "knowledge_update": "none",
+      "confidence": 0.58,
+      "rationale": {
+        "intent_matches": [
+          "readme",
+          "错别字"
+        ],
+        "domain_evidence": [],
+        "profile": "automation",
+        "primary_candidates": [],
+        "supporting_candidates": [],
+        "runtime_filter": "Only codex-discoverable, non-stale skills are eligible; Mirasim-only skills remain external.",
+        "minimal_capability_rule": "At most one primary, at most four supporting skills, and only mapped providers."
+      }
+    },
+    {
+      "router_version": "2.1.0",
+      "intent": "bugfix",
+      "domains": [
+        "auth",
+        "frontend"
+      ],
+      "scale": "STANDARD",
+      "risk": "HIGH",
+      "primary_skill": "systematic-debugging",
+      "supporting_skills": [
+        "playwright"
+      ],
+      "providers": [
+        "browser"
+      ],
+      "worktree": {
+        "use": false,
+        "reason": "Worktree gate not met; DEEP alone is insufficient and objective/isolation evidence is incomplete."
+      },
+      "subagents": {
+        "use": false,
+        "reason": "Subagent gate not met; requires DEEP, parallel benefit, at least 2 objectives, and low-conflict evidence."
+      },
+      "verification": [
+        "reproduce-original-failure",
+        "targeted-tests",
+        "runtime-regression",
+        "verification-before-completion",
+        "typecheck",
+        "build",
+        "browser-flow",
+        "browser-console",
+        "responsive-check"
+      ],
+      "planning": "lightweight",
+      "knowledge_update": "none",
+      "confidence": 0.83,
+      "rationale": {
+        "intent_matches": [
+          "修复",
+          "白屏"
+        ],
+        "domain_evidence": [
+          {
+            "name": "auth",
+            "score": 12,
+            "strong": [
+              "登录"
+            ],
+            "weak": []
+          },
+          {
+            "name": "frontend",
+            "score": 12,
+            "strong": [
+              "react"
+            ],
+            "weak": []
+          },
+          {
+            "name": "web",
+            "score": 12,
+            "strong": [
+              "react"
+            ],
+            "weak": []
+          }
+        ],
+        "profile": "frontend",
+        "primary_candidates": [
+          {
+            "name": "systematic-debugging",
+            "score": 330,
+            "priority": 95,
+            "confidence": 1.0,
+            "score_components": [
+              "contextual_primary_role",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence",
+              "preferred_primary"
+            ]
+          },
+          {
+            "name": "frontend-design",
+            "score": 290,
+            "priority": 90,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_primary_role",
+              "strong_evidence",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          }
+        ],
+        "supporting_candidates": [
+          {
+            "name": "playwright",
+            "score": 250,
+            "priority": 80,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          }
+        ],
+        "runtime_filter": "Only codex-discoverable, non-stale skills are eligible; Mirasim-only skills remain external.",
+        "minimal_capability_rule": "At most one primary, at most four supporting skills, and only mapped providers."
+      }
+    },
+    {
+      "router_version": "2.1.0",
+      "intent": "refactor",
+      "domains": [
+        "design-system",
+        "frontend"
+      ],
+      "scale": "DEEP",
+      "risk": "LOW",
+      "primary_skill": "frontend-design",
+      "supporting_skills": [
+        "playwright",
+        "executing-plans",
+        "planning-with-files"
+      ],
+      "providers": [
+        "browser"
+      ],
+      "worktree": {
+        "use": false,
+        "reason": "Worktree gate not met; DEEP alone is insufficient and objective/isolation evidence is incomplete."
+      },
+      "subagents": {
+        "use": false,
+        "reason": "Subagent gate not met; requires DEEP, parallel benefit, at least 2 objectives, and low-conflict evidence."
+      },
+      "verification": [
+        "typecheck",
+        "build",
+        "browser-flow",
+        "browser-console",
+        "responsive-check",
+        "verification-before-completion"
+      ],
+      "planning": "full",
+      "knowledge_update": "none",
+      "confidence": 0.79,
+      "rationale": {
+        "intent_matches": [
+          "重构"
+        ],
+        "domain_evidence": [
+          {
+            "name": "design-system",
+            "score": 12,
+            "strong": [
+              "design system"
+            ],
+            "weak": []
+          },
+          {
+            "name": "frontend",
+            "score": 12,
+            "strong": [
+              "前端"
+            ],
+            "weak": []
+          }
+        ],
+        "profile": "frontend",
+        "primary_candidates": [
+          {
+            "name": "frontend-design",
+            "score": 410,
+            "priority": 90,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_primary_role",
+              "strong_evidence",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence",
+              "preferred_primary"
+            ]
+          }
+        ],
+        "supporting_candidates": [
+          {
+            "name": "playwright",
+            "score": 250,
+            "priority": 80,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "executing-plans",
+            "score": 170,
+            "priority": 80,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "planning-with-files",
+            "score": 140,
+            "priority": 85,
+            "confidence": 1.0,
+            "score_components": [
+              "contextual_supporting_role",
+              "description_evidence",
+              "high_confidence"
+            ]
+          }
+        ],
+        "runtime_filter": "Only codex-discoverable, non-stale skills are eligible; Mirasim-only skills remain external.",
+        "minimal_capability_rule": "At most one primary, at most four supporting skills, and only mapped providers."
+      }
+    },
+    {
+      "router_version": "2.1.0",
+      "intent": "development",
+      "domains": [
+        "embedded",
+        "firmware"
+      ],
+      "scale": "DEEP",
+      "risk": "HIGH",
+      "primary_skill": "embedded-firmware-keil",
+      "supporting_skills": [
+        "embedded-debugger",
+        "executing-plans",
+        "dispatching-parallel-agents",
+        "subagent-driven-development"
+      ],
+      "providers": [],
+      "worktree": {
+        "use": false,
+        "reason": "Worktree gate not met; DEEP alone is insufficient and objective/isolation evidence is incomplete."
+      },
+      "subagents": {
+        "use": false,
+        "reason": "Subagent gate not met; requires DEEP, parallel benefit, at least 2 objectives, and low-conflict evidence."
+      },
+      "verification": [
+        "compile",
+        "link",
+        "static-analysis",
+        "serial-or-hardware-check",
+        "verification-before-completion",
+        "flash-if-authorized"
+      ],
+      "planning": "full",
+      "knowledge_update": "none",
+      "confidence": 0.79,
+      "rationale": {
+        "intent_matches": [
+          "实现"
+        ],
+        "domain_evidence": [
+          {
+            "name": "embedded",
+            "score": 27,
+            "strong": [
+              "stm32",
+              "固件"
+            ],
+            "weak": [
+              "温湿度"
+            ]
+          },
+          {
+            "name": "firmware",
+            "score": 24,
+            "strong": [
+              "stm32",
+              "固件"
+            ],
+            "weak": []
+          }
+        ],
+        "profile": "embedded",
+        "primary_candidates": [
+          {
+            "name": "embedded-firmware-keil",
+            "score": 320,
+            "priority": 90,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_primary_role",
+              "strong_evidence",
+              "high_confidence",
+              "preferred_primary"
+            ]
+          }
+        ],
+        "supporting_candidates": [
+          {
+            "name": "embedded-debugger",
+            "score": 220,
+            "priority": 50,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "description_evidence",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "executing-plans",
+            "score": 170,
+            "priority": 80,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "dispatching-parallel-agents",
+            "score": 170,
+            "priority": 50,
+            "confidence": 0.85,
+            "score_components": [
+              "contextual_supporting_role",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "embedded-firmware-keil",
+            "score": 160,
+            "priority": 90,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "subagent-driven-development",
+            "score": 120,
+            "priority": 50,
+            "confidence": 0.0,
+            "score_components": [
+              "contextual_supporting_role",
+              "description_evidence",
+              "explicit_trigger",
+              "low_confidence"
+            ]
+          }
+        ],
+        "runtime_filter": "Only codex-discoverable, non-stale skills are eligible; Mirasim-only skills remain external.",
+        "minimal_capability_rule": "At most one primary, at most four supporting skills, and only mapped providers."
+      }
+    },
+    {
+      "router_version": "2.1.0",
+      "intent": "development",
+      "domains": [
+        "eda",
+        "embedded"
+      ],
+      "scale": "DEEP",
+      "risk": "LOW",
+      "primary_skill": "kicad",
+      "supporting_skills": [
+        "datasheets",
+        "easyeda-agent",
+        "executing-plans",
+        "dispatching-parallel-agents"
+      ],
+      "providers": [],
+      "worktree": {
+        "use": false,
+        "reason": "Worktree gate not met; DEEP alone is insufficient and objective/isolation evidence is incomplete."
+      },
+      "subagents": {
+        "use": false,
+        "reason": "Subagent gate not met; requires DEEP, parallel benefit, at least 2 objectives, and low-conflict evidence."
+      },
+      "verification": [
+        "schematic-connectivity",
+        "bom-check",
+        "drc",
+        "output-file-check",
+        "verification-before-completion",
+        "compile",
+        "link",
+        "static-analysis",
+        "serial-or-hardware-check"
+      ],
+      "planning": "full",
+      "knowledge_update": "none",
+      "confidence": 0.79,
+      "rationale": {
+        "intent_matches": [
+          "设计"
+        ],
+        "domain_evidence": [
+          {
+            "name": "eda",
+            "score": 24,
+            "strong": [
+              "pcb",
+              "原理图"
+            ],
+            "weak": []
+          },
+          {
+            "name": "embedded",
+            "score": 15,
+            "strong": [
+              "stm32"
+            ],
+            "weak": [
+              "温湿度"
+            ]
+          },
+          {
+            "name": "firmware",
+            "score": 12,
+            "strong": [
+              "stm32"
+            ],
+            "weak": []
+          }
+        ],
+        "profile": "eda",
+        "primary_candidates": [
+          {
+            "name": "kicad",
+            "score": 320,
+            "priority": 50,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_primary_role",
+              "strong_evidence",
+              "high_confidence",
+              "preferred_primary"
+            ]
+          },
+          {
+            "name": "easyeda-agent",
+            "score": 260,
+            "priority": 50,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_primary_role",
+              "strong_evidence",
+              "description_evidence",
+              "high_confidence"
+            ]
+          }
+        ],
+        "supporting_candidates": [
+          {
+            "name": "datasheets",
+            "score": 220,
+            "priority": 50,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "description_evidence",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "easyeda-agent",
+            "score": 220,
+            "priority": 50,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "description_evidence",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "executing-plans",
+            "score": 170,
+            "priority": 80,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "dispatching-parallel-agents",
+            "score": 170,
+            "priority": 50,
+            "confidence": 0.85,
+            "score_components": [
+              "contextual_supporting_role",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "bom",
+            "score": 160,
+            "priority": 50,
+            "confidence": 1.0,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "kicad",
+            "score": 160,
+            "priority": 50,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "high_confidence"
+            ]
+          }
+        ],
+        "runtime_filter": "Only codex-discoverable, non-stale skills are eligible; Mirasim-only skills remain external.",
+        "minimal_capability_rule": "At most one primary, at most four supporting skills, and only mapped providers."
+      }
+    },
+    {
+      "router_version": "2.1.0",
+      "intent": "revision",
+      "domains": [
+        "document",
+        "academic"
+      ],
+      "scale": "STANDARD",
+      "risk": "LOW",
+      "primary_skill": "chinese-academic-writing-cn",
+      "supporting_skills": [
+        "citation-verify"
+      ],
+      "providers": [
+        "documents",
+        "zotero"
+      ],
+      "worktree": {
+        "use": false,
+        "reason": "Worktree gate not met; DEEP alone is insufficient and objective/isolation evidence is incomplete."
+      },
+      "subagents": {
+        "use": false,
+        "reason": "Subagent gate not met; requires DEEP, parallel benefit, at least 2 objectives, and low-conflict evidence."
+      },
+      "verification": [
+        "content-check",
+        "render-check",
+        "pagination-check",
+        "verification-before-completion",
+        "source-quality",
+        "citation-check",
+        "content-review"
+      ],
+      "planning": "lightweight",
+      "knowledge_update": "none",
+      "confidence": 0.8,
+      "rationale": {
+        "intent_matches": [
+          "毕业论文"
+        ],
+        "domain_evidence": [
+          {
+            "name": "document",
+            "score": 24,
+            "strong": [
+              "word",
+              "输出 word"
+            ],
+            "weak": []
+          },
+          {
+            "name": "academic",
+            "score": 12,
+            "strong": [
+              "论文"
+            ],
+            "weak": []
+          }
+        ],
+        "profile": "document",
+        "primary_candidates": [
+          {
+            "name": "chinese-academic-writing-cn",
+            "score": 320,
+            "priority": 90,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_primary_role",
+              "strong_evidence",
+              "high_confidence",
+              "preferred_primary"
+            ]
+          },
+          {
+            "name": "scientific-writing",
+            "score": 200,
+            "priority": 50,
+            "confidence": 0.85,
+            "score_components": [
+              "contextual_primary_role",
+              "strong_evidence",
+              "high_confidence"
+            ]
+          }
+        ],
+        "supporting_candidates": [
+          {
+            "name": "citation-verify",
+            "score": 220,
+            "priority": 80,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "description_evidence",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "chinese-academic-writing-cn",
+            "score": 160,
+            "priority": 90,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "high_confidence"
+            ]
+          }
+        ],
+        "runtime_filter": "Only codex-discoverable, non-stale skills are eligible; Mirasim-only skills remain external.",
+        "minimal_capability_rule": "At most one primary, at most four supporting skills, and only mapped providers."
+      }
+    },
+    {
+      "router_version": "2.1.0",
+      "intent": "development",
+      "domains": [
+        "orchestration",
+        "auth",
+        "backend"
+      ],
+      "scale": "DEEP",
+      "risk": "HIGH",
+      "primary_skill": "orchestration",
+      "supporting_skills": [
+        "dispatching-parallel-agents",
+        "executing-plans",
+        "planning-with-files",
+        "subagent-driven-development"
+      ],
+      "providers": [
+        "browser"
+      ],
+      "worktree": {
+        "use": true,
+        "reason": "DEEP task has qualifying isolation/parallel evidence; objective_count=3."
+      },
+      "subagents": {
+        "use": true,
+        "reason": "At least 2 independent objectives, parallel benefit, and low-conflict evidence are present."
+      },
+      "verification": [
+        "unit-tests",
+        "integration-tests",
+        "auth-data-boundary",
+        "verification-before-completion"
+      ],
+      "planning": "full",
+      "knowledge_update": "none",
+      "confidence": 0.83,
+      "rationale": {
+        "intent_matches": [
+          "实现",
+          "开发"
+        ],
+        "domain_evidence": [
+          {
+            "name": "orchestration",
+            "score": 15,
+            "strong": [
+              "独立开发"
+            ],
+            "weak": [
+              "模块"
+            ]
+          },
+          {
+            "name": "auth",
+            "score": 12,
+            "strong": [
+              "登录"
+            ],
+            "weak": []
+          },
+          {
+            "name": "backend",
+            "score": 12,
+            "strong": [
+              "数据库"
+            ],
+            "weak": []
+          }
+        ],
+        "profile": "backend",
+        "primary_candidates": [
+          {
+            "name": "orchestration",
+            "score": 410,
+            "priority": 50,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_primary_role",
+              "strong_evidence",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence",
+              "preferred_primary"
+            ]
+          }
+        ],
+        "supporting_candidates": [
+          {
+            "name": "dispatching-parallel-agents",
+            "score": 250,
+            "priority": 50,
+            "confidence": 0.85,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "executing-plans",
+            "score": 170,
+            "priority": 80,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "planning-with-files",
+            "score": 140,
+            "priority": 85,
+            "confidence": 1.0,
+            "score_components": [
+              "contextual_supporting_role",
+              "description_evidence",
+              "high_confidence"
+            ]
+          },
+          {
+            "name": "subagent-driven-development",
+            "score": 120,
+            "priority": 50,
+            "confidence": 0.0,
+            "score_components": [
+              "contextual_supporting_role",
+              "description_evidence",
+              "explicit_trigger",
+              "low_confidence"
+            ]
+          }
+        ],
+        "runtime_filter": "Only codex-discoverable, non-stale skills are eligible; Mirasim-only skills remain external.",
+        "minimal_capability_rule": "At most one primary, at most four supporting skills, and only mapped providers."
+      }
+    },
+    {
+      "router_version": "2.1.0",
+      "intent": "deployment",
+      "domains": [
+        "deployment",
+        "frontend"
+      ],
+      "scale": "STANDARD",
+      "risk": "HIGH",
+      "primary_skill": null,
+      "supporting_skills": [
+        "playwright"
+      ],
+      "providers": [
+        "vercel",
+        "browser"
+      ],
+      "worktree": {
+        "use": false,
+        "reason": "Worktree gate not met; DEEP alone is insufficient and objective/isolation evidence is incomplete."
+      },
+      "subagents": {
+        "use": false,
+        "reason": "Subagent gate not met; requires DEEP, parallel benefit, at least 2 objectives, and low-conflict evidence."
+      },
+      "verification": [
+        "build",
+        "deployment-status",
+        "health-check",
+        "auth-read-write-boundary",
+        "verification-before-completion",
+        "typecheck",
+        "browser-flow",
+        "browser-console",
+        "responsive-check"
+      ],
+      "planning": "lightweight",
+      "knowledge_update": "none",
+      "confidence": 0.71,
+      "rationale": {
+        "intent_matches": [
+          "部署"
+        ],
+        "domain_evidence": [
+          {
+            "name": "deployment",
+            "score": 24,
+            "strong": [
+              "vercel",
+              "部署"
+            ],
+            "weak": []
+          },
+          {
+            "name": "frontend",
+            "score": 12,
+            "strong": [
+              "next.js"
+            ],
+            "weak": []
+          },
+          {
+            "name": "web",
+            "score": 12,
+            "strong": [
+              "next.js"
+            ],
+            "weak": []
+          }
+        ],
+        "profile": "deployment",
+        "primary_candidates": [
+          {
+            "name": "frontend-design",
+            "score": 410,
+            "priority": 90,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_primary_role",
+              "strong_evidence",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence",
+              "preferred_primary"
+            ]
+          }
+        ],
+        "supporting_candidates": [
+          {
+            "name": "playwright",
+            "score": 250,
+            "priority": 80,
+            "confidence": 0.95,
+            "score_components": [
+              "contextual_supporting_role",
+              "strong_evidence",
+              "description_evidence",
+              "explicit_trigger",
+              "high_confidence"
+            ]
+          }
+        ],
+        "runtime_filter": "Only codex-discoverable, non-stale skills are eligible; Mirasim-only skills remain external.",
+        "minimal_capability_rule": "At most one primary, at most four supporting skills, and only mapped providers."
+      }
+    }
+  ],
+  "results": [
+    {
+      "name": "AGENTS.md exists",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "AGENTS references WORKFLOW_ROUTER.md",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "AGENTS references ROUTING_CATALOG.json",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Router references ROUTING_CATALOG.json",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "ROUTING_CATALOG.json exists and parses",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "CAPABILITIES_FULL.json parses",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "CAPABILITIES_SUMMARY.json parses",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "CAPABILITIES.json parses",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "MCP_RUNTIME_STATUS.json exists and parses",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "RUNTIME_TOOLS.json parses",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains intents",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains domains",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains risk_rules",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains scale_rules",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains profiles",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains skill_role_bindings",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains provider_mappings",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains verification_mappings",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains candidate_scoring",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains runtime_policy",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains worktree_rules",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains subagent_rules",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains execution_gate_rules",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains profile_contamination",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog contains qa_rules",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Catalog schema_version is 2.1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Full index schema_version is 2.1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Full index has entries",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Full index parser failure count is zero",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Full index has classification_audit",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Full index has profile_contamination audit",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Summary index schema_version is 2.1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Summary has 13 profiles",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Summary profiles use primary_skill_candidates",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Summary profiles use provider_candidates",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Summary exposes strict Skill runtime filter",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Summary marks Mirasim-only Skill as ineligible",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Compatibility pointer schema_version is 2.1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Compatibility pointer points to Summary and Full",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "MCP snapshot has observed_at",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "MCP snapshot has snapshot_id",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "MCP snapshot has stale policy",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "MCP snapshot has server records",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "MCP snapshot matches current config",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "MCP snapshot is fresh by clock",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Runtime tools schema_version is 2.1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Runtime tools snapshot has observed_at",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Runtime tools snapshot has snapshot_id",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Runtime tools snapshot has stale field",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Runtime tools snapshot is fresh by clock",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script exists: workflow-router-core.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script has UTF-8 BOM: workflow-router-core.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script exists: resolve-workflow-route.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script has UTF-8 BOM: resolve-workflow-route.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script exists: update-capability-index.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script has UTF-8 BOM: update-capability-index.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script exists: update-mcp-runtime-status.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script has UTF-8 BOM: update-mcp-runtime-status.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script exists: generate-workflow-router-report.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script has UTF-8 BOM: generate-workflow-router-report.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script exists: test-workflow-router.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Script has UTF-8 BOM: test-workflow-router.ps1",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Self-Test does not define legacy route evaluator",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Self-Test does not branch on prompt to implement routing",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Generator does not hardcode MCP health truth",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Generator references Catalog",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Legacy task_types do not affect route scoring",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Core has no order-breaking Sort-Object -Unique",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Tokenizer keeps token requesting-code-review",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Tokenizer keeps token requesting",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Tokenizer keeps token code",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Tokenizer keeps token review",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Priority 95 precedes priority 50 at equal score",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Candidate sort is stable across repeated runs",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Stable unique preserves first occurrence order",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Stable object unique preserves first occurrence order",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Stale runtime skill is not eligible",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Router Reference Integrity has checks",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Router Reference Integrity has no hard failures",
+      "status": "PASS",
+      "details": "",
+      "level": "static"
+    },
+    {
+      "name": "Fixture Generator exits successfully",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "Fixture parser failure count is zero",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "Literal block scalar preserves newline",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "Folded block scalar joins lines",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "Empty description counted separately",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "Explicit trigger provenance is frontmatter",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "Trigger statistics distinguish explicit and fallback",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "Fixture Generator is stable on consecutive runs",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "systematic-debugging is debugging primary",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "verification-before-completion is verification only",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "kicad has contextual EDA primary role",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "kicad is supporting in embedded context",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "Mirasim-only build-keil is not Codex-discoverable",
+      "status": "PASS",
+      "details": "",
+      "level": "capability"
+    },
+    {
+      "name": "Backend profile excludes kicad",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Backend profile excludes BOM",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Backend profile excludes citation-verify",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Frontend profile excludes video-shotcraft as primary",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Academic profile excludes firmware and PCB skills",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Embedded profile excludes PCB tools for firmware-only default",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Mirasim-only build-keil is absent from Codex candidates",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Backend profile excludes embedded firmware",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "EDA candidates exclude embedded firmware",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_1_README has intent/domains",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_1_README intent=maintenance",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_1_README scale=FAST",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_1_README primary constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_1_README worktree constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_1_README subagent constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_1_README has worktree reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_1_README has subagent reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_1_README minimal primary count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_1_README minimal supporting count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_2_REACT_BUG has intent/domains",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_2_REACT_BUG intent=bugfix",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_2_REACT_BUG contains domain=frontend",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_2_REACT_BUG scale=STANDARD",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_2_REACT_BUG primary constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_2_REACT_BUG worktree constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_2_REACT_BUG has worktree reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_2_REACT_BUG has subagent reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_2_REACT_BUG minimal primary count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_2_REACT_BUG minimal supporting count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_3_FRONTEND_REFACTOR has intent/domains",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_3_FRONTEND_REFACTOR intent=refactor",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_3_FRONTEND_REFACTOR contains domain=frontend",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_3_FRONTEND_REFACTOR scale=DEEP",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_3_FRONTEND_REFACTOR primary constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_3_FRONTEND_REFACTOR has worktree reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_3_FRONTEND_REFACTOR has subagent reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_3_FRONTEND_REFACTOR minimal primary count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_3_FRONTEND_REFACTOR minimal supporting count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE has intent/domains",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE intent=development",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE contains domain=embedded",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE scale=DEEP",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE primary constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE worktree constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE subagent constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE has worktree reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE has subagent reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE minimal primary count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_4_STM32_FIRMWARE minimal supporting count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_5_STM32_PCB has intent/domains",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_5_STM32_PCB contains domain=eda",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_5_STM32_PCB primary constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_5_STM32_PCB has worktree reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_5_STM32_PCB has subagent reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_5_STM32_PCB minimal primary count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_5_STM32_PCB minimal supporting count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD has intent/domains",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD intent=revision",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD contains domain=academic",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD scale=STANDARD",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD primary constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD worktree constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD subagent constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD has worktree reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD has subagent reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD minimal primary count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_6_ACADEMIC_WORD minimal supporting count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_7_PARALLEL_MODULES has intent/domains",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_7_PARALLEL_MODULES scale=DEEP",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_7_PARALLEL_MODULES worktree constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_7_PARALLEL_MODULES subagent constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_7_PARALLEL_MODULES has worktree reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_7_PARALLEL_MODULES has subagent reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_7_PARALLEL_MODULES minimal primary count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_7_PARALLEL_MODULES minimal supporting count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_8_VERCEL has intent/domains",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_8_VERCEL contains domain=deployment",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_8_VERCEL primary constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_8_VERCEL provider constraint",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_8_VERCEL has worktree reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_8_VERCEL has subagent reason",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_8_VERCEL minimal primary count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "CASE_8_VERCEL minimal supporting count",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Single-module parallel task does not use Worktree",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Single-module parallel task does not use Subagents",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Strict Codex route excludes Mirasim-only build-keil",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Strict Codex route excludes Mirasim-only flash-keil",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Strict Codex route excludes Mirasim-only serial-monitor",
+      "status": "PASS",
+      "details": "",
+      "level": "profile"
+    },
+    {
+      "name": "Real Agent Eval status is explicit",
+      "status": "PASS",
+      "details": "",
+      "level": "real-agent"
+    },
+    {
+      "name": "Real Agent Eval has exactly 8 cases",
+      "status": "PASS",
+      "details": "",
+      "level": "real-agent"
+    },
+    {
+      "name": "Real Agent Eval selected skills pass strict runtime filter",
+      "status": "PASS",
+      "details": "",
+      "level": "real-agent"
+    }
+  ]
+}
+

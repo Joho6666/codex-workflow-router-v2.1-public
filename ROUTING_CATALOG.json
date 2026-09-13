@@ -1,0 +1,502 @@
+{
+  "schema_version": "2.1",
+  "catalog_version": "2.1.0",
+  "description": "Single machine-readable source of truth for Codex Workflow Router decisions.",
+  "decision_schema": {
+    "required": [
+      "router_version",
+      "intent",
+      "domains",
+      "scale",
+      "risk",
+      "primary_skill",
+      "supporting_skills",
+      "providers",
+      "worktree",
+      "subagents",
+      "verification",
+      "confidence",
+      "rationale"
+    ],
+    "primary_limit": 1,
+    "supporting_limit": 4,
+    "mandatory_final_gate": "verification-before-completion",
+    "provider_role": "tool/provider only"
+  },
+  "intents": {
+    "maintenance": {
+      "terms": ["readme", "typo", "错别字", "小改", "简单配置", "文案小改", "拼写"],
+      "default_scale": "FAST",
+      "preferred_primary": null
+    },
+    "bugfix": {
+      "terms": ["bug", "fix", "修复", "报错", "白屏", "崩溃", "故障", "异常", "排查", "调试"],
+      "default_scale": "STANDARD",
+      "preferred_primary": "systematic-debugging"
+    },
+    "refactor": {
+      "terms": ["refactor", "重构", "改造", "迁移架构", "设计系统"],
+      "default_scale": "STANDARD",
+      "preferred_primary": null
+    },
+    "development": {
+      "terms": ["implement", "build", "create", "develop", "实现", "开发", "写", "创建", "设计"],
+      "default_scale": "STANDARD",
+      "preferred_primary": null
+    },
+    "revision": {
+      "terms": ["revise", "rewrite", "修改论文", "毕业论文", "论文润色", "改论文"],
+      "default_scale": "STANDARD",
+      "preferred_primary": "chinese-academic-writing-cn"
+    },
+    "research": {
+      "terms": ["research", "investigate", "literature", "研究", "调研", "文献综述"],
+      "default_scale": "STANDARD",
+      "preferred_primary": "scientific-writing"
+    },
+    "review": {
+      "terms": ["review", "audit", "审查", "审核", "代码审查", "安全审查"],
+      "default_scale": "STANDARD",
+      "preferred_primary": null
+    },
+    "data": {
+      "terms": ["analytics", "analyze data", "数据分析", "报表", "看板", "指标"],
+      "default_scale": "STANDARD",
+      "preferred_primary": null
+    },
+    "creative": {
+      "terms": ["creative", "poster", "image", "视觉", "海报", "配图", "创意"],
+      "default_scale": "STANDARD",
+      "preferred_primary": null
+    },
+    "video": {
+      "terms": ["video", "video editing", "视频", "剪辑", "分镜", "宣传片", "口播"],
+      "default_scale": "STANDARD",
+      "preferred_primary": "video-spec-builder"
+    },
+    "automation": {
+      "terms": ["automate", "automation", "scheduled", "自动化", "定时任务", "批处理"],
+      "default_scale": "STANDARD",
+      "preferred_primary": null
+    },
+    "deployment": {
+      "terms": ["deploy", "deployment", "release", "上线", "部署", "发布"],
+      "default_scale": "STANDARD",
+      "preferred_primary": null
+    }
+  },
+  "domains": {
+    "frontend": {
+      "strong_terms": ["react", "vue", "next.js", "frontend", "browser", "playwright", "前端", "网页"],
+      "weak_terms": ["css", "responsive", "component", "ui", "页面", "组件"],
+      "negative_capabilities": ["eda", "academic", "embedded"],
+      "profile": "frontend"
+    },
+    "web": {
+      "strong_terms": ["next.js", "react", "web", "website", "网页", "网站"],
+      "weak_terms": ["browser", "frontend", "页面"],
+      "negative_capabilities": ["eda", "academic"],
+      "profile": "frontend"
+    },
+    "auth": {
+      "strong_terms": ["auth", "authentication", "login", "登录", "鉴权", "认证"],
+      "weak_terms": ["session", "token", "权限"],
+      "negative_capabilities": ["eda", "video"],
+      "profile": "backend"
+    },
+    "backend": {
+      "strong_terms": ["backend", "api", "server", "database", "数据库", "后端", "接口"],
+      "weak_terms": ["service", "function", "serverless", "服务"],
+      "negative_capabilities": ["eda", "academic", "video"],
+      "profile": "backend"
+    },
+    "embedded": {
+      "strong_terms": ["stm32", "esp32", "firmware", "keil", "microcontroller", "8051", "c51", "embedded", "嵌入式", "单片机", "固件"],
+      "weak_terms": ["sensor", "serial", "uart", "gpio", "hardware", "温湿度", "串口", "传感器"],
+      "negative_capabilities": ["academic", "video"],
+      "profile": "embedded"
+    },
+    "firmware": {
+      "strong_terms": ["firmware", "stm32", "esp32", "keil", "固件", "烧录"],
+      "weak_terms": ["compile", "serial", "microcontroller", "编译", "串口"],
+      "negative_capabilities": ["eda", "academic", "video"],
+      "profile": "embedded"
+    },
+    "eda": {
+      "strong_terms": ["pcb", "schematic", "kicad", "easyeda", "gerber", "excellon", "spice", "bom", "电路", "原理图", "印制板"],
+      "weak_terms": ["routing", "layout", "drc", "netlist", "footprint", "走线", "元器件"],
+      "negative_capabilities": ["academic", "backend", "video"],
+      "profile": "eda"
+    },
+    "cad": {
+      "strong_terms": ["solidworks", "autocad", "cad", "mechanical", "cnc", "dwg", "dxf", "机械", "建模"],
+      "weak_terms": ["3d", "modeling", "machining", "fillet", "chamfer", "装配", "倒角"],
+      "negative_capabilities": ["academic", "deployment-cloud"],
+      "profile": "cad"
+    },
+    "academic": {
+      "strong_terms": ["thesis", "paper", "citation", "literature", "scientific", "academic", "论文", "学术", "学位论文", "文献综述"],
+      "weak_terms": ["references", "bibliography", "journal", "abstract", "文献", "引用"],
+      "negative_capabilities": ["embedded", "eda", "deployment-cloud", "video"],
+      "profile": "academic"
+    },
+    "document": {
+      "strong_terms": ["word", "docx", "document", "文档", "排版", "输出 word"],
+      "weak_terms": ["pdf", "formatting", "rendered", "格式整理"],
+      "negative_capabilities": ["embedded", "eda", "video"],
+      "profile": "document"
+    },
+    "research": {
+      "strong_terms": ["research", "literature", "scientific", "文献", "研究", "调研"],
+      "weak_terms": ["source", "evidence", "来源", "证据"],
+      "negative_capabilities": ["embedded", "eda"],
+      "profile": "research"
+    },
+    "creative": {
+      "strong_terms": ["creative", "poster", "image", "voice", "audio", "海报", "插图", "配图"],
+      "weak_terms": ["visual", "brand", "illustration", "视觉"],
+      "negative_capabilities": ["backend", "eda", "academic"],
+      "profile": "creative"
+    },
+    "video": {
+      "strong_terms": ["video", "remotion", "subtitle", "narrator", "sora", "jianying", "shotcraft", "视频", "分镜", "字幕", "剪辑"],
+      "weak_terms": ["editing", "footage", "caption", "口播", "转场"],
+      "negative_capabilities": ["backend", "eda", "academic"],
+      "profile": "video"
+    },
+    "design-system": {
+      "strong_terms": ["design system", "设计系统", "component library", "组件库"],
+      "weak_terms": ["tokens", "theme", "组件"],
+      "negative_capabilities": ["eda", "academic"],
+      "profile": "frontend"
+    },
+    "deployment": {
+      "strong_terms": ["deployment", "deploy", "vercel", "netlify", "cloudflare", "部署", "上线"],
+      "weak_terms": ["hosting", "release", "发布"],
+      "negative_capabilities": ["eda", "academic", "video"],
+      "profile": "deployment"
+    },
+    "automation": {
+      "strong_terms": ["automation", "automate", "hook", "cron", "自动化", "定时任务"],
+      "weak_terms": ["schedule", "recurring", "周期"],
+      "negative_capabilities": ["academic", "eda"],
+      "profile": "automation"
+    },
+    "orchestration": {
+      "strong_terms": ["orchestration", "parallel", "independent modules", "多个独立", "并行", "独立开发"],
+      "weak_terms": ["subagent", "agent", "拆分", "模块"],
+      "negative_capabilities": ["academic", "eda"],
+      "profile": "development"
+    },
+    "debugging": {
+      "strong_terms": ["debug", "bug", "diagnostic", "troubleshoot", "调试", "排错", "报错", "故障"],
+      "weak_terms": ["failure", "error", "stacktrace", "白屏", "异常"],
+      "negative_capabilities": ["academic", "video"],
+      "profile": "development"
+    }
+  },
+  "capabilities": {
+    "engineering-process": {
+      "strong_terms": ["debug", "test", "review", "git", "worktree", "verification", "workflow", "plan", "planning", "orchestration", "测试", "流程", "重构", "静态分析"],
+      "weak_terms": ["agent", "ci", "release", "branch", "审查"],
+      "task_types": ["bugfix", "review", "maintenance", "development", "refactor"]
+    },
+    "knowledge": {
+      "strong_terms": ["obsidian", "graphify", "markdown", "knowledge", "second-brain", "pkm", "知识库", "双链", "第二大脑"],
+      "weak_terms": ["wiki", "notes", "vault", "笔记"],
+      "task_types": ["maintenance", "research", "revision"]
+    },
+    "deployment-cloud": {
+      "strong_terms": ["cloudbase", "supabase", "cloudflare", "vercel", "netlify", "云开发", "部署"],
+      "weak_terms": ["deploy", "hosting", "serverless", "workers", "上线", "云端"],
+      "task_types": ["deployment", "development"]
+    },
+    "data": {
+      "strong_terms": ["analytics", "echarts", "spreadsheet", "kpi", "dataset", "数据分析", "看板", "报表"],
+      "weak_terms": ["chart", "data", "dashboard", "metric", "report", "指标", "图表"],
+      "task_types": ["data", "research"]
+    },
+    "procurement": {
+      "strong_terms": ["digikey", "mouser", "lcsc", "element14", "采购", "立创", "选型"],
+      "weak_terms": ["sourcing", "price", "stock", "distributor", "库存", "报价"],
+      "task_types": ["development", "review"]
+    },
+    "manufacturing": {
+      "strong_terms": ["jlcpcb", "pcbway", "manufacturing", "fabrication", "打样", "贴片", "加工"],
+      "weak_terms": ["assembly", "smt", "turnkey", "制造", "焊接"],
+      "task_types": ["development", "review"]
+    }
+  },
+  "classification_overrides": {
+    "planning-with-files": { "force_capabilities": ["engineering-process"], "exclude_capabilities": ["frontend"] },
+    "verification-before-completion": { "force_capabilities": ["engineering-process"], "exclude_capabilities": ["frontend"] },
+    "autocad-automation": { "force_capabilities": ["cad"], "exclude_capabilities": ["academic", "document", "deployment-cloud"] },
+    "solidworks-api-skill": { "force_capabilities": ["cad"], "exclude_capabilities": ["deployment-cloud", "academic", "document"] },
+    "graphify": { "force_capabilities": ["knowledge"], "exclude_capabilities": ["academic", "document"] },
+    "systematic-debugging": { "force_capabilities": ["debugging", "engineering-process"], "exclude_capabilities": ["frontend"] },
+    "literature-review": { "force_capabilities": ["academic", "research"], "exclude_capabilities": ["embedded", "eda"] },
+    "video-shotcraft": { "force_capabilities": ["video", "creative"], "exclude_capabilities": ["frontend", "backend", "eda"] },
+    "bom": { "force_capabilities": ["eda", "embedded", "manufacturing", "procurement"], "exclude_capabilities": ["academic", "document", "video"] }
+  },
+  "domain_selection": {
+    "max_domains": 4,
+    "suppress": {
+      "frontend": ["web"],
+      "academic": ["research"],
+      "video": ["creative"],
+      "eda": ["firmware"]
+    },
+    "keep_if_explicit": ["web", "research", "creative", "firmware", "固件", "keil", "烧录"],
+    "retain_pairs": [["deployment", "web"], ["academic", "document"], ["video", "creative"]]
+  },
+  "risk_rules": [
+    { "id": "critical-secret", "level": "CRITICAL", "terms": ["secret", "token", "api key", "password", "cookie", "凭据", "密钥", "密码", "令牌"] },
+    { "id": "critical-destructive", "level": "CRITICAL", "terms": ["delete all", "drop database", "删库", "删除全部", "不可逆", "irreversible"] },
+    { "id": "high-production", "level": "HIGH", "terms": ["production", "prod", "线上", "生产", "deploy", "deployment", "部署", "发布"] },
+    { "id": "high-data-auth", "level": "HIGH", "terms": ["database", "数据库", "migration", "迁移", "login", "登录", "auth", "认证", "payment", "支付", "真实用户数据"] },
+    { "id": "high-hardware", "level": "HIGH", "terms": ["flash", "烧录", "firmware", "固件", "hardware", "硬件"] }
+  ],
+  "scale_rules": [
+    { "scale": "FAST", "terms": ["readme", "typo", "错别字", "single file", "单文件", "single line", "单行", "简单配置", "small tweak", "小改"], "worktree_default": false, "subagents_default": false, "planning": "none" },
+    { "scale": "DEEP", "terms": ["entire", "whole", "design system", "cross-module", "three independent", "stm32", "firmware", "sensor system", "pcb", "schematic", "three independent", "多个独立", "整个", "全局", "跨模块", "大型", "复杂", "并行", "固件", "原理图", "温湿度"], "deep_domains": ["embedded", "firmware", "eda", "cad", "orchestration"], "worktree_default": false, "subagents_default": false, "planning": "full" },
+    { "scale": "STANDARD", "terms": [], "worktree_default": false, "subagents_default": false, "planning": "lightweight" }
+  ],
+  "profiles": {
+    "development": { "intents": ["development", "bugfix", "refactor"], "domains": ["debugging", "orchestration", "web"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "frontend": { "intents": ["development", "bugfix", "refactor"], "domains": ["frontend", "web", "design-system"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "backend": { "intents": ["development", "bugfix", "refactor", "deployment"], "domains": ["backend", "auth"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "embedded": { "intents": ["development", "bugfix"], "domains": ["embedded", "firmware"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "eda": { "intents": ["development", "review"], "domains": ["eda", "embedded"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "cad": { "intents": ["development", "revision"], "domains": ["cad"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "academic": { "intents": ["revision", "research"], "domains": ["academic", "research"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "document": { "intents": ["revision", "research"], "domains": ["document", "academic"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "research": { "intents": ["research", "review"], "domains": ["research", "academic"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "creative": { "intents": ["creative", "video"], "domains": ["creative"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "video": { "intents": ["video", "creative"], "domains": ["video", "creative"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "deployment": { "intents": ["deployment"], "domains": ["deployment", "web", "backend"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 },
+    "automation": { "intents": ["automation", "maintenance"], "domains": ["automation", "orchestration"], "max_primary": 4, "max_supporting": 8, "max_verification": 4 }
+  },
+  "skill_role_bindings": {
+    "systematic-debugging": { "debugging": ["primary"], "bugfix": ["primary"], "engineering-process": ["supporting"], "review": ["supporting"] },
+    "frontend-design": { "frontend": ["primary"], "design-system": ["primary"], "creative": ["supporting"] },
+    "embedded-firmware-keil": { "embedded": ["primary"], "firmware": ["primary"], "development": ["supporting"] },
+    "chinese-academic-writing-cn": { "academic": ["primary"], "revision": ["primary"], "document": ["supporting"] },
+    "scientific-writing": { "academic": ["primary"], "research": ["primary"] },
+    "kicad": { "eda": ["primary", "supporting"], "embedded": ["supporting"], "debugging": ["supporting"] },
+    "easyeda-agent": { "eda": ["primary", "supporting"], "embedded": ["supporting"] },
+    "bom": { "eda": ["supporting"], "embedded": ["supporting"], "manufacturing": ["supporting"], "procurement": ["supporting"] },
+    "datasheets": { "eda": ["supporting"], "embedded": ["supporting"], "research": ["supporting"] },
+    "build-keil": { "embedded": ["supporting", "verification"], "firmware": ["supporting", "verification"] },
+    "flash-keil": { "embedded": ["supporting", "verification"], "firmware": ["supporting", "verification"] },
+    "serial-monitor": { "embedded": ["supporting", "verification"], "firmware": ["supporting", "verification"] },
+    "embedded-debugger": { "embedded": ["supporting", "verification"], "debugging": ["supporting", "verification"] },
+    "verification-before-completion": { "engineering-process": ["verification"], "bugfix": ["verification"], "development": ["verification"], "review": ["verification"] },
+    "static-analysis": { "engineering-process": ["verification"], "embedded": ["verification"], "bugfix": ["verification"] },
+    "review-bugbot": { "review": ["verification"], "engineering-process": ["verification"] },
+    "review-security": { "review": ["verification"], "auth": ["verification"], "engineering-process": ["verification"] },
+    "playwright": { "frontend": ["supporting", "verification"], "web": ["supporting", "verification"], "auth": ["verification"] },
+    "citation-verify": { "academic": ["supporting", "verification"], "research": ["verification"], "document": ["verification"] },
+    "planning-with-files": { "engineering-process": ["supporting"], "orchestration": ["supporting"], "refactor": ["supporting"] },
+    "executing-plans": { "engineering-process": ["supporting"], "development": ["supporting"], "refactor": ["supporting"] },
+    "dispatching-parallel-agents": { "orchestration": ["supporting"], "development": ["supporting"] },
+    "subagent-driven-development": { "orchestration": ["supporting"], "development": ["supporting"] },
+    "orchestration": { "orchestration": ["primary"], "automation": ["supporting"] },
+    "solidworks-automation": { "cad": ["primary"] },
+    "autocad-automation": { "cad": ["primary", "supporting"] },
+    "solidworks-api-skill": { "cad": ["supporting"] },
+    "video-spec-builder": { "video": ["primary"], "creative": ["primary"] },
+    "video-shotcraft": { "video": ["primary", "supporting"], "creative": ["supporting"] },
+    "remotion-best-practices": { "video": ["supporting"], "creative": ["supporting"] }
+  },
+  "provider_mappings": {
+    "browser": { "domains": ["frontend", "web", "auth", "deployment"], "kinds": ["mcp", "plugin", "tool"] },
+    "playwright": { "domains": ["frontend", "web", "auth"], "kinds": ["plugin", "tool"] },
+    "kicad": { "domains": ["eda"], "kinds": ["mcp", "plugin", "tool"] },
+    "easyeda": { "domains": ["eda"], "kinds": ["mcp", "plugin", "tool"] },
+    "documents": { "domains": ["document", "academic"], "kinds": ["plugin", "tool"] },
+    "zotero": { "domains": ["academic", "research"], "kinds": ["plugin", "tool"] },
+    "vercel": { "domains": ["deployment", "web"], "kinds": ["plugin", "tool"] },
+    "netlify": { "domains": ["deployment", "web"], "kinds": ["plugin", "tool"] },
+    "cloudbase": { "domains": ["deployment", "backend"], "kinds": ["mcp", "plugin", "tool"] },
+    "cloudflare": { "domains": ["deployment", "backend"], "kinds": ["mcp", "plugin", "tool"] },
+    "supabase": { "domains": ["deployment", "backend", "auth"], "kinds": ["mcp", "plugin", "tool"] },
+    "github": { "domains": ["development", "deployment", "review"], "kinds": ["mcp", "plugin", "tool"] },
+    "canva": { "domains": ["creative", "video", "document"], "kinds": ["plugin", "tool"] },
+    "figma": { "domains": ["creative", "frontend", "design-system"], "kinds": ["plugin", "tool"] },
+    "remotion": { "domains": ["video", "creative"], "kinds": ["plugin", "tool"] },
+    "obsidian": { "domains": ["research", "document"], "kinds": ["mcp", "plugin", "tool"] }
+  },
+  "provider_preferences": {
+    "explicit_terms": {
+      "vercel": "vercel",
+      "netlify": "netlify",
+      "cloudbase": "cloudbase",
+      "cloudflare": "cloudflare",
+      "supabase": "supabase",
+      "kicad": "kicad",
+      "easyeda": "easyeda",
+      "playwright": "playwright",
+      "zotero": "zotero",
+      "canva": "canva",
+      "figma": "figma",
+      "remotion": "remotion"
+    },
+    "domain_defaults": {
+      "frontend": "browser",
+      "web": "browser",
+      "auth": "browser",
+      "eda": "kicad",
+      "academic": "zotero",
+      "document": "documents",
+      "deployment": "vercel"
+    }
+  },
+  "verification_mappings": {
+    "maintenance": ["targeted-diff-check", "verification-before-completion"],
+    "bugfix": ["reproduce-original-failure", "targeted-tests", "runtime-regression", "verification-before-completion"],
+    "frontend": ["typecheck", "build", "browser-flow", "browser-console", "responsive-check", "verification-before-completion"],
+    "backend": ["unit-tests", "integration-tests", "auth-data-boundary", "verification-before-completion"],
+    "embedded": ["compile", "link", "static-analysis", "serial-or-hardware-check", "verification-before-completion"],
+    "firmware": ["compile", "link", "flash-if-authorized", "serial-or-hardware-check", "verification-before-completion"],
+    "eda": ["schematic-connectivity", "bom-check", "drc", "output-file-check", "verification-before-completion"],
+    "cad": ["feature-tree-check", "dimension-check", "export-check", "verification-before-completion"],
+    "academic": ["source-quality", "citation-check", "content-review", "verification-before-completion"],
+    "document": ["content-check", "render-check", "pagination-check", "verification-before-completion"],
+    "research": ["source-check", "fact-check", "citation-check", "verification-before-completion"],
+    "deployment": ["build", "deployment-status", "health-check", "auth-read-write-boundary", "verification-before-completion"],
+    "review": ["diff-review", "risk-review", "tests", "security-review", "verification-before-completion"]
+  },
+  "candidate_scoring": {
+    "contextual_primary_role": 100,
+    "contextual_supporting_role": 60,
+    "contextual_verification_role": 100,
+    "skill_name_strong_match": 80,
+    "description_strong_evidence": 60,
+    "intent_match": 40,
+    "explicit_trigger": 30,
+    "fresh_runtime_available": 25,
+    "high_confidence": 20,
+    "low_confidence": -30,
+    "weak_cross_domain_match": -60,
+    "domain_conflict": -80,
+    "runtime_unavailable": -100,
+    "preferred_primary": 120,
+    "minimum_score": { "primary": 120, "supporting": 60, "verification": 60 }
+  },
+  "priority_overrides": {
+    "verification-before-completion": 100,
+    "systematic-debugging": 95,
+    "frontend-design": 90,
+    "embedded-firmware-keil": 90,
+    "chinese-academic-writing-cn": 90,
+    "solidworks-automation": 90,
+    "video-spec-builder": 85,
+    "planning-with-files": 85,
+    "review-security": 85,
+    "executing-plans": 80,
+    "build-keil": 80,
+    "serial-monitor": 80,
+    "playwright": 80,
+    "citation-verify": 80
+  },
+  "runtime_policy": {
+    "codex_skill": { "require_kind": "skill", "require_discoverable_by_codex": true, "allow_unknown_discoverability": false },
+    "mirasim_skill": { "require_discoverable_by_codex": true, "unknown_is_external": true },
+    "plugin": { "cached_does_not_imply_runtime_available": true },
+    "mcp": { "configured_does_not_imply_healthy": true },
+    "snapshot": { "stale_after_seconds": 21600, "stale_runtime_is_unknown": true }
+  },
+  "worktree_rules": {
+    "default_use": false,
+    "criteria": ["parallel implementation", "risk isolation", "experiment comparison", "workspace conflict", "long-running protected work"],
+    "deep_does_not_imply_worktree": true
+  },
+  "subagent_rules": {
+    "default_use": false,
+    "required_conditions": ["at least two independent objectives", "low file ownership conflict", "parallel benefit exceeds integration cost"],
+    "deep_does_not_imply_subagents": true
+  },
+  "execution_gate_rules": {
+    "parallel_terms": ["parallel implementation", "parallel", "independent modules", "并行", "同时", "独立开发", "尽量独立"],
+    "isolation_terms": ["risk isolation", "workspace conflict", "工作区冲突", "隔离工作区"],
+    "experiment_terms": ["experiment comparison", "多方案实验", "方案对比"],
+    "protected_terms": ["long-running protected work", "protect current workspace", "保护当前工作区", "长时间任务"],
+    "low_conflict_terms": ["low file ownership conflict", "low conflict", "低冲突", "互不相关", "独立开发", "尽量独立", "independent modules"],
+    "objective_count_terms": {
+      "1": ["one module", "single module", "一个模块", "单个模块", "one objective", "一个目标"],
+      "2": ["two modules", "两个模块", "two objectives", "两个目标", "two tasks", "两个任务"],
+      "3": ["three modules", "三个模块", "three objectives", "三个目标", "three tasks", "三个任务"],
+      "4": ["four modules", "四个模块", "four objectives", "四个目标", "four tasks", "四个任务"]
+    },
+    "minimum_independent_objectives": 2,
+    "worktree_requires_deep": true,
+    "subagent_requires_deep": true
+  },
+  "route_preferences": {
+    "primary_policy": {
+      "optional_intents": ["deployment"],
+      "optional_domains": ["deployment"],
+      "fallback_when_optional": false
+    },
+    "primary_by_intent": {
+      "bugfix": "systematic-debugging",
+      "revision": "chinese-academic-writing-cn",
+      "video": "video-spec-builder"
+    },
+    "primary_by_domain": {
+      "frontend": "frontend-design",
+      "embedded": "embedded-firmware-keil",
+      "firmware": "embedded-firmware-keil",
+      "eda": "kicad",
+      "cad": "solidworks-automation",
+      "academic": "chinese-academic-writing-cn",
+      "research": "scientific-writing",
+      "orchestration": "orchestration",
+      "video": "video-spec-builder"
+    },
+    "primary_by_intent_domain": [
+      { "intent": "bugfix", "domains": ["frontend", "auth"], "skill": "systematic-debugging" },
+      { "intent": "refactor", "domains": ["frontend", "design-system"], "skill": "frontend-design" },
+      { "intent": "development", "domains": ["embedded", "firmware"], "exclude_domains": ["eda"], "skill": "embedded-firmware-keil" },
+      { "intent": "development", "domains": ["embedded", "eda"], "exclude_domains": ["firmware"], "skill": "kicad" },
+      { "intent": "development", "domains": ["orchestration"], "skill": "orchestration" },
+      { "intent": "revision", "domains": ["academic", "document"], "skill": "chinese-academic-writing-cn" }
+    ]
+  },
+  "profile_contamination": {
+    "development": { "forbidden_names": ["citation-verify", "kicad", "flash-keil"], "forbidden_capabilities": ["academic", "eda"] },
+    "backend": { "forbidden_names": ["kicad", "pcb", "bom", "citation-verify", "embedded-debugger", "embedded-firmware-keil"], "forbidden_capabilities": ["eda", "academic", "video"] },
+    "eda": { "forbidden_names": ["embedded-firmware-keil"], "forbidden_primary_names": ["embedded-firmware-keil"], "forbidden_capabilities": ["academic", "video"] },
+    "frontend": { "forbidden_names": ["video-shotcraft", "flash-keil", "pcbway", "citation-management"], "forbidden_capabilities": ["eda", "academic", "embedded"] },
+    "embedded": { "forbidden_names": ["literature-review", "citation-verify", "video-shotcraft", "kicad", "easyeda-agent", "pcbway", "jlcpcb"], "forbidden_capabilities": ["academic", "video", "eda", "manufacturing"] },
+    "academic": { "forbidden_names": ["embedded-firmware-keil", "build-keil", "flash-keil", "kicad", "pcbway"], "forbidden_capabilities": ["embedded", "eda", "deployment-cloud", "video"] },
+    "automation": { "forbidden_names": ["kicad", "citation-verify", "video-shotcraft"], "forbidden_capabilities": ["academic", "eda"] }
+  },
+  "qa_rules": {
+    "required_sample_skills": ["kicad", "bom", "datasheets", "systematic-debugging", "verification-before-completion", "planning-with-files", "executing-plans", "dispatching-parallel-agents", "subagent-driven-development", "test-driven-development", "requesting-code-review", "receiving-code-review", "frontend-design", "video-shotcraft", "embedded-firmware-keil", "build-keil", "flash-keil", "serial-monitor", "literature-review", "citation-management", "word-academic-docx-cn", "autocad-automation", "solidworks-automation"],
+    "minimum_random_sample": 40,
+    "allowed_qa_status": ["CORRECT", "ACCEPTABLE", "WRONG", "UNKNOWN"]
+  },
+  "legacy_compatibility": {
+    "task_type_to_intent": {
+      "development": "development",
+      "bugfix": "bugfix",
+      "refactor": "refactor",
+      "frontend": "development",
+      "backend": "development",
+      "embedded": "development",
+      "eda": "development",
+      "cad": "development",
+      "academic": "revision",
+      "research": "research",
+      "document": "revision",
+      "creative": "creative",
+      "video": "video",
+      "automation": "automation",
+      "deployment": "deployment",
+      "review": "review",
+      "maintenance": "maintenance"
+    }
+  }
+}
+

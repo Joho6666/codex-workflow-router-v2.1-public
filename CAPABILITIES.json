@@ -1,0 +1,16 @@
+{
+  "schema_version": "2.1",
+  "index_type": "compatibility-pointer",
+  "generated_at": "2026-09-13T10:34:06.0991910Z",
+  "summary_path": "<USER_HOME>\\.codex\\CAPABILITIES_SUMMARY.json",
+  "full_path": "<USER_HOME>\\.codex\\CAPABILITIES_FULL.json",
+  "counts": {
+    "skill": 284,
+    "plugin": 105,
+    "mcp": 2,
+    "tool": 1150,
+    "hook": 8,
+    "automation": 3,
+    "total": 1552
+  }
+}
